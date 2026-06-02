@@ -3,702 +3,471 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Studio] — Smart communication for thoughtful brands</title>
+  <title>The Good Bit - Strategy, content, and digital communication</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=energy-pass-20260526-1" />
 </head>
 <body>
-
-  <!-- ============================================================
-       NAVBAR
-       ============================================================ -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo">[studio].</a>
+      <a href="#home" class="brand" aria-label="The Good Bit home">
+        <span>the good bit</span>
+        <span class="star brand-star" aria-hidden="true">✹</span>
+      </a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
-      <a href="#contact" class="btn btn-coral nav-cta">Book a discovery call</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <a href="#contact" class="btn btn-pink nav-cta">Book a discovery call <span aria-hidden="true">↗</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-      <a href="#contact" class="btn btn-coral">Book a discovery call</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-pink">Book a discovery call <span aria-hidden="true">↗</span></a>
     </div>
   </nav>
 
-  <!-- ============================================================
-       HERO
-       ============================================================ -->
-  <section class="hero" id="home">
-    <div class="hero-blobs" aria-hidden="true">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-    </div>
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-eyebrow">for cool people doing good things.</span>
-        <h1 class="hero-headline">
-          An <span class="hl hl--amber">indie</span>
-          <span class="inline-float float-ig" aria-hidden="true">🎯</span>
-          marketing<br />
-          <span class="text-outline">studio</span> for <span class="hl hl--indigo">thoughtful</span>
-          <span class="inline-float float-spark" aria-hidden="true">♟️</span><br />
-          brands and <span class="hl hl--coral" id="heroTypewriter">organizations.</span>
-        </h1>
+  <main>
+    <section class="hero section" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="star mini-star">✹</span>Creative communications studio</p>
+          <h1>Strategy, content, and digital <span class="marker">communication</span> for good ideas.</h1>
+          <p class="lead">We help indie brands and startups cut through the noise with smart strategy, better content, and campaigns that actually connect.</p>
+          <div class="actions">
+            <a href="#contact" class="btn btn-pink">Book a discovery call <span aria-hidden="true">↗</span></a>
+            <a href="#work" class="btn btn-outline">See our work</a>
+          </div>
+        </div>
+        <div class="hero-collage collage" aria-label="Good Bit visual collage">
+          <span class="blob blob-blue"></span>
+          <span class="burst burst-large">✹</span>
+          <span class="doodle doodle-blue">⌒⌒⌒</span>
+          <div class="paper-note hero-note">Good ideas<br>start here.<br><span>No fluff.</span></div>
+          <span class="doodle arrow-doodle">↝</span>
+        </div>
+      </div>
+    </section>
 
-        <!-- Two side-by-side boxes below headline -->
-        <div class="hero-boxes">
-          <div class="hero-box">
-            <p class="hero-sub">
-              From strategy and copy to social media and landing pages, I help brands,
-              organizations, and small teams communicate more clearly and build a stronger
-              digital presence without the usual marketing nonsense.
-            </p>
-            <div class="hero-ctas">
-              <a href="#services" class="btn btn-outline">Explore services</a>
-              <a href="#contact" class="btn btn-coral">Book a discovery call</a>
+    <section class="what strip-section compact" aria-label="What we do">
+      <div class="wrap">
+        <p class="eyebrow"><span class="star mini-star">✹</span>What we do</p>
+        <div class="what-grid">
+          <a class="mini-card" href="#services">
+            <span class="card-icon icon-pink">◎</span>
+            <h2>Strategy</h2>
+            <p>Positioning, messaging and communication strategy that cuts through.</p>
+            <span class="arrow">→</span>
+          </a>
+          <a class="mini-card" href="#services">
+            <span class="card-icon icon-blue">✎</span>
+            <h2>Content</h2>
+            <p>Storytelling and content that informs, inspires and converts.</p>
+            <span class="arrow">→</span>
+          </a>
+          <a class="mini-card" href="#services">
+            <span class="card-icon icon-yellow">▣</span>
+            <h2>Digital</h2>
+            <p>Websites and digital experiences that are useful and beautiful.</p>
+            <span class="arrow">→</span>
+          </a>
+          <a class="mini-card" href="#services">
+            <span class="card-icon icon-ink">♟</span>
+            <h2>Social &amp; Creative</h2>
+            <p>Social content and creative that builds communities and drives action.</p>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise section">
+      <div class="wrap promise-board">
+        <div class="promise-main">
+          <p class="eyebrow">Our promise</p>
+          <h2>Less noise, <span class="marker">more signal.</span></h2>
+          <p>We believe clarity changes everything. We bring focus to your message and craft work that earns attention for the right reasons.</p>
+          <a href="#contact" class="btn btn-paper">Book a call <span aria-hidden="true">→</span></a>
+          <div class="promise-collage">
+            <span class="blob blob-blue"></span>
+            <div class="paper-note small">Good brands<br>don’t shout.<br>They signal.</div>
+          </div>
+        </div>
+        <div class="promise-cards">
+          <article class="dark-card">
+            <span class="card-icon icon-pink">✹</span>
+            <h3>Clarity first</h3>
+            <p>We simplify the complex and make every word earn its place.</p>
+          </article>
+          <article class="dark-card">
+            <span class="card-icon icon-blue">〽</span>
+            <h3>Human &amp; smart</h3>
+            <p>We write like humans and design like people, not templates.</p>
+          </article>
+          <article class="dark-card">
+            <span class="card-icon icon-yellow">♥</span>
+            <h3>Impact driven</h3>
+            <p>Ideas are good. Impact is better. We chase the latter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="wrap">
+        <div class="section-head services-head">
+          <div>
+            <p class="eyebrow"><span class="star mini-star">✹</span>What we do</p>
+            <h2>Services built for brands with <span class="marker">something to say.</span></h2>
+            <p>Strategy, content, and creative that cut through the noise and make your brand impossible to ignore.</p>
+          </div>
+          <div class="head-art">
+            <span class="burst">✹</span>
+            <div class="sticky-note">Smart<br>Playful<br>Chill</div>
+          </div>
+        </div>
+        <div class="service-grid">
+          <article class="service-tile tint-pink">
+            <div>
+              <p class="tile-kicker">01 / Service</p>
+              <h3>Strategy &amp; positioning</h3>
+              <p>We help you get clear, find your angle, and own your space.</p>
+              <a href="#work" class="text-link">See our work →</a>
+            </div>
+            <span class="burst">✹</span>
+          </article>
+          <article class="service-tile tint-blue">
+            <div>
+              <p class="tile-kicker blue">02 / Service</p>
+              <h3>Content &amp; storytelling</h3>
+              <p>Turn boring into scroll-stopping. Big ideas. Real impact.</p>
+              <a href="#work" class="text-link">See our work →</a>
+            </div>
+            <div class="paper-note tiny">Words<br>that work.<br>Hard.</div>
+          </article>
+          <article class="service-tile tint-yellow">
+            <div>
+              <p class="tile-kicker yellow">03 / Service</p>
+              <h3>Digital &amp; design</h3>
+              <p>Bold, clean, and built to be seen. Design that works as hard as you do.</p>
+              <a href="#work" class="text-link">See our work →</a>
+            </div>
+          </article>
+          <article class="service-tile tint-lilac">
+            <div>
+              <p class="tile-kicker purple">04 / Service</p>
+              <h3>Social &amp; creative</h3>
+              <p>Thumb-stopping ideas that spark convos and build brand love.</p>
+              <a href="#work" class="text-link">See our work →</a>
+            </div>
+            <span class="dot-blob"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="process">
+      <div class="wrap process-board">
+        <div class="process-intro">
+          <p class="eyebrow"><span class="star mini-star">✹</span>Process</p>
+          <h2>From messy to <span class="marker">clear.</span></h2>
+          <p>We help indie brands get their ideas out of their heads and into the world: strategically, creatively, and with total clarity.</p>
+          <div class="process-machine">
+            <div class="paper-note small">idea machine<br>powered by<br>good thinking.</div>
+          </div>
+        </div>
+        <div class="step-row process-flow">
+          <svg class="process-line" viewBox="0 0 700 120" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M20 60 C160 20 230 96 350 60 S540 20 680 60" />
+          </svg>
+          <article class="step-card">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>We dig in, ask questions and get to the heart of what matters.</p>
+            <small>Insight fuels everything.</small>
+          </article>
+          <article class="step-card">
+            <span>02</span>
+            <h3>Create</h3>
+            <p>We craft strategy, messages and content that connect.</p>
+            <small>Ideas with direction.</small>
+          </article>
+          <article class="step-card">
+            <span>03</span>
+            <h3>Deliver</h3>
+            <p>We ship, support and refine, so your message keeps working.</p>
+            <small>Built to make impact.</small>
+          </article>
+        </div>
+        <div class="mini-cta">
+          <span class="star">✹</span>
+          <strong>Let’s make something <span class="marker small-marker">good.</span></strong>
+          <a href="#contact" class="btn btn-pink">Start a discovery call <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing">
+      <div class="wrap">
+        <div class="pricing-head">
+          <div>
+            <p class="eyebrow"><span class="star mini-star">✹</span>Pricing</p>
+            <h2>Find the <span class="marker">right plan</span> for your work.</h2>
+            <p>Simple, transparent pricing for indie teams and startups. Cancel anytime. No hidden fees. Just good work.</p>
+          </div>
+          <div class="paper-note large-note">Not sure<br>which plan?<br><span>We’ll help you pick what’s right.</span><a href="#contact">Book a call →</a></div>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p>For small projects and early stage ideas.</p>
+            <strong>£1,500</strong>
+            <span>One-off project</span>
+            <ul>
+              <li>Strategy session</li>
+              <li>Content plan</li>
+              <li>2 core deliverables</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Get started →</a>
+          </article>
+          <article class="price-card featured">
+            <div class="popular">Most popular</div>
+            <h3>Growth</h3>
+            <p>For brands ready to create consistently and grow.</p>
+            <strong>£3,000</strong>
+            <span>Per month</span>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Ongoing content</li>
+              <li>Landing page / site</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-pink" href="#contact">Book a call →</a>
+          </article>
+          <article class="price-card">
+            <h3>Bespoke</h3>
+            <p>Custom solutions for unique goals.</p>
+            <strong>Custom</strong>
+            <span>Tailored to you</span>
+            <ul>
+              <li>Tailored strategy</li>
+              <li>Custom scope</li>
+              <li>Dedicated support</li>
+              <li>Flexible terms</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Book a call →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="wrap">
+        <div class="work-hero">
+          <div>
+            <p class="eyebrow">Work &amp; Experience <span class="star mini-star">✹</span></p>
+            <h2>New studio. <span class="marker">Not new here.</span></h2>
+            <p>The Good Bit is a new studio with seasoned hands. We’ve spent years helping thoughtful brands and startups turn smart ideas into real impact.</p>
+          </div>
+          <div class="work-collage">
+            <span class="burst">✹</span>
+            <div class="paper-note">Human &amp;<br>smart ideas.<br>Real results.</div>
+          </div>
+        </div>
+        <div class="trusted">
+          <p><span class="icon-pink">♥</span> Trusted by</p>
+          <span>CGIAR</span>
+          <span>CERN</span>
+          <span>SONY</span>
+          <span>PICO XR</span>
+          <a href="#contact">+ more good bits ↗</a>
+        </div>
+        <div class="case-grid">
+          <article class="case-card case-file case-cgiar">
+            <span class="tag blue-tag">Digital platform</span>
+            <h3>CGIAR<br>Genebank Platform</h3>
+            <p>A unified digital platform improving access to crop data for food security worldwide.</p>
+            <a href="#contact">→</a>
+          </article>
+          <article class="case-card case-file case-cern">
+            <span class="tag yellow-tag">Brand &amp; campaign</span>
+            <h3>CERN<br>Idea Square</h3>
+            <p>A global campaign making particle physics curious, clear, and seriously cool.</p>
+            <a href="#contact">→</a>
+          </article>
+          <article class="case-card case-file case-sony">
+            <span class="tag pink-tag">Product experience</span>
+            <h3>Sony<br>Creators’ Cloud</h3>
+            <p>A content management platform built for creators, by creators.</p>
+            <a href="#contact">→</a>
+          </article>
+          <article class="case-card case-file case-pico">
+            <span class="tag lilac-tag">XR &amp; immersive</span>
+            <h3>PICO XR<br>Global Brand Launch</h3>
+            <p>Positioning and campaign for the next era of immersive exploration.</p>
+            <a href="#contact">→</a>
+          </article>
+        </div>
+        <a class="btn btn-pink centered" href="#contact">See more of our work <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow"><span class="star mini-star">✹</span>About the good bit</p>
+            <h2>Hi, I’m <span class="marker">Cam.</span></h2>
+            <p>I started The Good Bit to help indie brands and startups say the right things in the right way: smart, scrappy, and full of heart.</p>
+            <p>Strategy, content, and creative that cuts through the noise and gets results.</p>
+            <div class="actions">
+              <a href="#contact" class="btn btn-pink">Let’s make something good. <span aria-hidden="true">→</span></a>
+              <a href="#work" class="btn btn-outline">See our work →</a>
             </div>
           </div>
-          <div class="hero-box">
-            <div class="hero-info-grid">
-              <div class="hero-info-item">
-                <span class="hero-info-label">Currently based in</span>
-                <span class="hero-info-value">Amsterdam, NL 🇳🇱</span>
-              </div>
-              <div class="hero-info-item">
-                <span class="hero-info-label">Languages spoken</span>
-                <span class="hero-info-value">EN · IT · FR · ES · NL</span>
-              </div>
-              <div class="hero-info-item">
-                <span class="hero-info-label">Open spots</span>
-                <span class="hero-info-value">2 client spots · from May</span>
-              </div>
-              <div class="hero-info-item">
-                <span class="hero-info-label">Currently reading</span>
-                <a href="#" class="hero-info-value hero-info-link">Your book here →</a>
-              </div>
-            </div>
+          <figure class="portrait-collage">
+            <span class="burst">✹</span>
+            <span class="tape"></span>
+          </figure>
+        </div>
+        <div class="stats-grid">
+          <article><span>☻</span><strong>10+</strong><p>Years of strategy, content &amp; digital</p></article>
+          <article><span>✳</span><strong>50+</strong><p>Projects delivered across the globe</p></article>
+          <article><span>♡</span><strong>100%</strong><p>Care, curiosity and caffeine</p></article>
+          <article><span>∞</span><strong>∞</strong><p>Ideas, curiosity and late nights</p></article>
+        </div>
+        <div class="kind-words">
+          <p class="eyebrow"><span class="star mini-star">✹</span>Kind words</p>
+          <div class="quote-grid">
+            <article class="quote-card">
+              <span>“</span>
+              <p>Cam gets it. Fast. The work is smart, strategic, and actually sounds like us: just better.</p>
+              <strong>Maya Lee</strong>
+              <small>Founder, ClearPeak</small>
+            </article>
+            <article class="quote-card">
+              <span>“</span>
+              <p>Working with Cam is like having a creative partner who’s equal parts brain and gut.</p>
+              <strong>Jordan Pierce</strong>
+              <small>COO, Tally</small>
+            </article>
+            <article class="quote-card">
+              <span>“</span>
+              <p>From positioning to copy to campaigns, The Good Bit helped us grow with clarity and voice.</p>
+              <strong>Riley Chen</strong>
+              <small>Head of Growth, Loop</small>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
-       MARQUEE TICKER
-       ============================================================ -->
-  <div class="marquee-section" aria-hidden="true">
-    <div class="marquee-track">
-      <div class="marquee-inner">
-        <span>INSTAGRAM</span><span class="div">✦</span>
-        <span>TIKTOK</span><span class="div">✦</span>
-        <span>LINKEDIN</span><span class="div">✦</span>
-        <span>CONTENT STRATEGY</span><span class="div">✦</span>
-        <span>COPYWRITING</span><span class="div">✦</span>
-        <span>SOCIAL MEDIA</span><span class="div">✦</span>
-        <span>NEWSLETTERS</span><span class="div">✦</span>
-        <span>LANDING PAGES</span><span class="div">✦</span>
-        <span>BRAND MESSAGING</span><span class="div">✦</span>
-        <span>YOUTUBE</span><span class="div">✦</span>
-        <!-- duplicate for seamless loop -->
-        <span>INSTAGRAM</span><span class="div">✦</span>
-        <span>TIKTOK</span><span class="div">✦</span>
-        <span>LINKEDIN</span><span class="div">✦</span>
-        <span>CONTENT STRATEGY</span><span class="div">✦</span>
-        <span>COPYWRITING</span><span class="div">✦</span>
-        <span>SOCIAL MEDIA</span><span class="div">✦</span>
-        <span>NEWSLETTERS</span><span class="div">✦</span>
-        <span>LANDING PAGES</span><span class="div">✦</span>
-        <span>BRAND MESSAGING</span><span class="div">✦</span>
-        <span>YOUTUBE</span><span class="div">✦</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       PHILOSOPHY
-       ============================================================ -->
-  <section class="philosophy">
-    <div class="container">
-      <span class="section-label">Philosophy</span>
-      <h2 class="philosophy-headline">
-        Less noise, <span class="hl hl--amber">more signal.</span>
-      </h2>
-      <div class="philosophy-body">
-        <p>
-          Thoughtful, sustainable marketing that earns attention instead of demanding it.
-          Clear strategy, strong content, and enough consistency to work with the algorithm
-          without turning your brand into more noise.
-        </p>
-        <p>
-          The goal is not to flood the internet with filler. It's to show up consistently,
-          say something worth saying, and build a presence people actually want to engage with.
-        </p>
-      </div>
-      <ul class="philosophy-principles">
-        <li>Quality over quantity, guided by strategy</li>
-        <li>Thoughtful content, backed by consistency</li>
-        <li>Less churn, better systems</li>
-        <li>Fewer empty posts, stronger communication</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       SERVICES
-       ============================================================ -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="services-header">
-        <span class="section-label">Services</span>
-        <h2>I help you<br><span class="hl hl--amber" id="typewriterTarget">say the right thing.</span></h2>
-        <p>
-          I help brands, organizations, small teams, and founders communicate more clearly,
-          show up more consistently, and market themselves without sounding generic,
-          chaotic, or painfully corporate.
-        </p>
-      </div>
-
-      <div class="services-cards">
-
-        <div class="service-card">
-          <div class="service-badge">
-            <span class="service-badge-dot" style="background:var(--coral)"></span>
-            Most requested
-          </div>
-          <div class="service-card-body">
-            <h3>Communication &amp; Marketing Strategy</h3>
-            <p class="service-desc">For teams, founders, and organizations that need direction before they need more content. Messaging, positioning, and a plan that makes sense.</p>
-          </div>
-          <div class="service-decor" aria-hidden="true">🧩</div>
-          <a href="#contact" class="service-cta">Work with me <span class="cta-arrow">→</span></a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-badge">
-            <span class="service-badge-dot" style="background:var(--indigo)"></span>
-            Strong opinions welcome
-          </div>
-          <div class="service-card-body">
-            <h3>Content Creation</h3>
-            <p class="service-desc">Clear, smart, human content that sounds like your brand. Copy, captions, articles, scripts, newsletters — no filler, no fog.</p>
-          </div>
-          <div class="service-decor" aria-hidden="true">✍</div>
-          <a href="#contact" class="service-cta">Work with me <span class="cta-arrow">→</span></a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-badge">
-            <span class="service-badge-dot" style="background:#C89000"></span>
-            Ongoing support
-          </div>
-          <div class="service-card-body">
-            <h3>Social Media Management</h3>
-            <p class="service-desc">Someone to run the thing properly. Content calendars, posting, reporting — less last-minute panic, more structure and consistency.</p>
-          </div>
-          <div class="service-decor" aria-hidden="true">📱</div>
-          <a href="#contact" class="service-cta">Work with me <span class="cta-arrow">→</span></a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-badge">
-            <span class="service-badge-dot" style="background:#0D8A7B"></span>
-            Copy &amp; structure
-          </div>
-          <div class="service-card-body">
-            <h3>Websites &amp; Landing Pages</h3>
-            <p class="service-desc">A better online presence without the bloat. Clear messaging, strong copy, and structure that converts — no overbuilt agency project required.</p>
-          </div>
-          <div class="service-decor" aria-hidden="true">🌐</div>
-          <a href="#contact" class="service-cta">Work with me <span class="cta-arrow">→</span></a>
-        </div>
-
-      </div><!-- /services-cards -->
-
-    </div>
-  </section>
-
-  <!-- ============================================================
-       PRICING
-       ============================================================ -->
-  <section class="pricing-section" id="pricing">
-    <div class="container">
-      <div class="pricing-header">
-        <span class="section-label">Pricing</span>
-        <h2>Find the <span class="hl hl--amber">right plan</span> for your work.</h2>
-        <p>From one-off projects to ongoing partnerships. No mystery pricing, no bloated packages.</p>
-      </div>
-      <div class="pricing-grid">
-
-        <div class="pricing-card">
-          <div class="pricing-icon">✨</div>
-          <span class="pricing-name">One-off</span>
-          <div class="pricing-price">From €500</div>
-          <p class="pricing-price-note">per project</p>
-          <p class="pricing-desc">For teams and founders who need a specific thing done well — a strategy session, a website, a campaign, a content refresh.</p>
-          <ul class="pricing-features">
-            <li>Strategy and messaging sessions</li>
-            <li>Website and landing page copy</li>
-            <li>One-time content projects</li>
-            <li>Audits and recommendations</li>
-            <li>Campaign concepts and copy</li>
-          </ul>
-          <a href="#contact" class="btn">Let's talk</a>
-        </div>
-
-        <div class="pricing-card pricing-card--featured">
-          <span class="pricing-badge">Most popular</span>
-          <div class="pricing-icon">🚀</div>
-          <span class="pricing-name">Monthly retainer</span>
-          <div class="pricing-price">From €1,200</div>
-          <p class="pricing-price-note">per month</p>
-          <p class="pricing-desc">For brands and organizations that need consistent, ongoing support — content, social media, strategy, or a combination.</p>
-          <ul class="pricing-features">
-            <li>Social media management</li>
-            <li>Content creation and copywriting</li>
-            <li>Monthly content calendar</li>
-            <li>Reporting and optimization</li>
-            <li>Ongoing strategy support</li>
-            <li>Light community management</li>
-          </ul>
-          <a href="#contact" class="btn">Book a discovery call</a>
-        </div>
-
-        <div class="pricing-card">
-          <div class="pricing-icon">🤝</div>
-          <span class="pricing-name">Partnership</span>
-          <div class="pricing-price">Custom</div>
-          <p class="pricing-price-note">let's figure it out together</p>
-          <p class="pricing-desc">For larger projects, multi-channel work, or teams that need a proper communications partner rather than a vendor.</p>
-          <ul class="pricing-features">
-            <li>Full strategy and execution</li>
-            <li>Multi-channel content</li>
-            <li>Website copy and structure</li>
-            <li>Priority access and response</li>
-            <li>Flexible scope and delivery</li>
-            <li>Trusted collaborator network</li>
-          </ul>
-          <a href="#contact" class="btn">Get in touch</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       WHO I WORK WITH
-       ============================================================ -->
-  <section class="who-section">
-    <div class="container">
-      <div class="who-inner">
-        <div class="who-left">
-          <span class="section-label">Who I work with</span>
-          <h2><span class="hl hl--amber">Useful</span> work, <span class="hl hl--indigo">thoughtful</span> people.</h2>
-          <p class="who-intro">
-            I work best with brands, organizations, and teams that are doing something useful,
-            thoughtful, or at least not actively making the world worse.
-          </p>
-          <p class="who-sub">That can look like:</p>
-          <ul class="who-list">
-            <li>Tech companies building something genuinely helpful</li>
-            <li>Sustainability and climate-focused organizations</li>
-            <li>Researchers, educators, and experts</li>
-            <li>Psychologists, coaches, and practitioners with a clear ethos</li>
-            <li>Founders with strong ideas and weak messaging</li>
-          </ul>
-        </div>
-        <div class="who-right">
-          <p class="who-right-label">Industries I've worked in — drag them around ↓</p>
-          <div class="gravity-container" id="gravityTags">
-            <span class="who-tag gravity-item">Sustainability</span>
-            <span class="who-tag who-tag--coral gravity-item">Tech</span>
-            <span class="who-tag gravity-item">Research</span>
-            <span class="who-tag who-tag--coral gravity-item">Publishing</span>
-            <span class="who-tag gravity-item">Education</span>
-            <span class="who-tag gravity-item">Culture</span>
-            <span class="who-tag who-tag--coral gravity-item">Climate</span>
-            <span class="who-tag gravity-item">NGOs</span>
-            <span class="who-tag gravity-item">Startups</span>
-            <span class="who-tag who-tag--coral gravity-item">Healthcare</span>
-            <span class="who-tag gravity-item">Science comms</span>
-            <span class="who-tag gravity-item">B2B</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       HOW I WORK
-       ============================================================ -->
-  <section class="how-section">
-    <div class="container">
-      <div class="how-header">
-        <span class="section-label">Process</span>
-        <h2>How I will help you:</h2>
-        <p class="how-intro">
-          I start by figuring out what is actually needed, not by throwing content at the wall
-          and calling it strategy.
-        </p>
-      </div>
-      <div class="steps-grid">
-        <div class="step-card reveal">
-          <span class="step-num">01</span>
-          <h4>Start with clarity</h4>
-          <p>I look at what you are saying now, what is working, what is muddy, and where the gaps are.</p>
-        </div>
-        <div class="step-card reveal reveal-delay-1">
-          <span class="step-num">02</span>
-          <h4>Build what you actually need</h4>
-          <p>Not every brand needs a giant package. Some need strategy. Some need copy. Some need ongoing social support. Some just need a website that stops confusing people.</p>
-        </div>
-        <div class="step-card reveal reveal-delay-2">
-          <span class="step-num">03</span>
-          <h4>Keep it useful</h4>
-          <p>I care about work that is useful, realistic, and sustainable to maintain. No bloated deliverables. No content treadmill for the sake of it.</p>
-        </div>
-        <div class="step-card reveal reveal-delay-3">
-          <span class="step-num">04</span>
-          <h4>Make it sound like you</h4>
-          <p>The goal is not to flatten your brand into generic industry language. It is to make it clearer, sharper, and more recognizably yours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       WORK & EXPERIENCE (merged)
-       ============================================================ -->
-  <section class="work-section" id="work">
-    <div class="container">
-      <div class="work-header">
+    <section class="faq section" id="faq">
+      <div class="wrap faq-grid">
         <div>
-          <span class="section-label">Work &amp; Experience</span>
-          <h2><span class="hl hl--amber">New</span> studio.<br><span class="hl hl--coral">Seasoned</span> work.</h2>
+          <p class="eyebrow">FAQ <span class="star mini-star">✹</span></p>
+          <h2>Things you might be <span class="marker">wondering.</span></h2>
+          <p>Straight answers to common questions. No fluff, just good info.</p>
+          <div class="faq-doodle">✈︎<span>Curious minds welcome.</span></div>
         </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question"><span>01 / FAQ</span>What kind of work do you do?<strong>+</strong></button>
+            <div class="faq-answer">Strategy, messaging, content, social, campaigns, websites, landing pages, and digital communication systems.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question"><span>02 / FAQ</span>Who do you usually work with?<strong>+</strong></button>
+            <div class="faq-answer">Indie brands, founders, startups, small teams, research organizations, creative teams, and mission-driven businesses.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question"><span>03 / FAQ</span>How does a project typically work?<strong>+</strong></button>
+            <div class="faq-answer">We start with a discovery call, agree on the scope, then move through strategy, creation, feedback, and delivery.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question"><span>04 / FAQ</span>How long does a project take?<strong>+</strong></button>
+            <div class="faq-answer">Small projects can take a few weeks. Larger strategy, website, or campaign work depends on scope and pace.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question"><span>05 / FAQ</span>What’s included in a project?<strong>+</strong></button>
+            <div class="faq-answer">A clear scope, useful deliverables, collaborative check-ins, and work designed to make your communication sharper.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question"><span>06 / FAQ</span>Do you offer ongoing support?<strong>+</strong></button>
+            <div class="faq-answer">Yes. Ongoing retainers are available for content, social, campaigns, and brand communication support.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contact">
+      <div class="wrap cta-banner">
         <div>
-          <p class="work-intro">
-            This studio is new, but the work behind it has been building for years.
-            I've worked across communications, editorial, digital media, sustainability,
-            research, culture, publishing, and tech — supporting organizations and brands
-            including CGIAR, CERN, Sony, and PICO XR.
-          </p>
-          <div class="logo-row">
-            <span class="logo-pill">CGIAR</span>
-            <span class="logo-pill">CERN</span>
-            <span class="logo-pill">Sony</span>
-            <span class="logo-pill">PICO XR</span>
-          </div>
+          <span class="black-label">Ready to build something good?</span>
+          <h2>Let’s make something <span class="marker">good.</span></h2>
+          <p>Smart strategy. Playful design. Real impact. Book a discovery call and let’s talk about your project.</p>
         </div>
+        <a class="btn btn-paper" href="mailto:hello@thegoodbit.studio">Book a discovery call <span aria-hidden="true">→</span></a>
       </div>
-      <div class="work-grid">
-        <div class="work-card reveal">
-          <img src="https://picsum.photos/seed/agriculture/600/340" alt="CGIAR project" class="work-card-img" />
-          <div class="work-card-body">
-            <div class="work-tags">
-              <span class="tag">Strategy</span>
-              <span class="tag">Social Media</span>
-            </div>
-            <h4>CGIAR</h4>
-            <p>Communications and social media work for one of the world's largest agricultural research networks.</p>
-          </div>
-          <span class="work-card-hover-label">View project</span>
-        </div>
-        <div class="work-card reveal reveal-delay-1">
-          <img src="https://picsum.photos/seed/science/600/340" alt="CERN project" class="work-card-img" />
-          <div class="work-card-body">
-            <div class="work-tags">
-              <span class="tag">Content</span>
-              <span class="tag">Editorial</span>
-            </div>
-            <h4>CERN</h4>
-            <p>Editorial and digital communications for the European Organization for Nuclear Research.</p>
-          </div>
-          <span class="work-card-hover-label">View project</span>
-        </div>
-        <div class="work-card reveal reveal-delay-2">
-          <img src="https://picsum.photos/seed/tech/600/340" alt="PICO XR project" class="work-card-img" />
-          <div class="work-card-body">
-            <div class="work-tags">
-              <span class="tag">Strategy</span>
-              <span class="tag">Content</span>
-            </div>
-            <h4>PICO XR</h4>
-            <p>Marketing and content strategy for an extended reality tech brand.</p>
-          </div>
-          <span class="work-card-hover-label">View project</span>
-        </div>
-      </div>
-      <p class="work-note">A few more examples are on the way. In the meantime, I'm happy to share relevant work privately.</p>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ============================================================
-       ABOUT
-       ============================================================ -->
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="about-compact">
-
-        <div class="about-compact-text">
-          <span class="section-label">About</span>
-          <h2>Hi, I'm <span class="hl hl--coral">Cam.</span></h2>
-          <p>
-            I'm a communications and marketing* person with a background in editorial work,
-            digital media, sustainability, research, content strategy, and social media.
-            I like smart ideas, clear language, and work that has an actual point to it —
-            especially projects that need clarity, stronger messaging, and a more thoughtful
-            digital presence.
-          </p>
-          <p class="about-footnote">* Also: writer, editor, strategist, digital person.</p>
-          <div class="about-pills">
-            <span class="about-pill">5+ years in comms</span>
-            <span class="about-pill">Amsterdam-based 🇳🇱</span>
-            <span class="about-pill">EN · IT · FR · ES</span>
-            <span class="about-pill">Strategy → Execution</span>
-          </div>
-          <a href="#contact" class="btn btn-coral btn-bordered">Let's work together</a>
-        </div>
-
-        <div class="about-compact-photo">
-          <div class="about-photo-placeholder">
-            <span class="about-photo-mark">✦</span>
-            <p>Photo coming soon</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       STATS STRIP
-       ============================================================ -->
-  <section class="stats-strip">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <div class="stat-number"><span>5+</span></div>
-          <p class="stat-label">Years of communications<br>and content work</p>
-        </div>
-        <div class="stat-item reveal reveal-delay-1">
-          <div class="stat-number stat-number--indigo"><span>20+</span></div>
-          <p class="stat-label">Brands and organizations<br>worked with</p>
-        </div>
-        <div class="stat-item reveal reveal-delay-2">
-          <div class="stat-number stat-number--amber"><span>4</span></div>
-          <p class="stat-label">Core services: strategy,<br>content, social, web</p>
-        </div>
-        <div class="stat-item reveal reveal-delay-3">
-          <div class="stat-number stat-number--indigo"><span>1</span></div>
-          <p class="stat-label">Person you'll always<br>work directly with</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       TESTIMONIALS
-       ============================================================ -->
-  <section class="testimonials-section">
-    <div class="container">
-      <div class="testimonials-inner">
-
-        <!-- Left: label + heading + dots -->
-        <div class="testimonials-left reveal">
-          <span class="section-label">Kind words</span>
-          <h2>Some kind words<br>from good people</h2>
-          <p class="testimonials-sub">What my clients say about working with me.</p>
-          <div class="carousel-dots">
-            <button class="dot dot--active" data-index="0" aria-label="Testimonial 1"></button>
-            <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
-            <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
-          </div>
-        </div>
-
-        <!-- Right: stacked sliding cards -->
-        <div class="testimonials-right" id="testimonialsGrid">
-
-          <div class="testimonial-card testimonial-card--active" data-index="0">
-            <div class="testimonial-stars">★★★★★</div>
-            <div class="testimonial-quote">
-              <p>"Cam brought genuine clarity to our communications. We finally felt like our messaging actually sounded like us."</p>
-            </div>
-            <div class="testimonial-sep"></div>
-            <div class="testimonial-author">
-              <div class="photo-circle">A</div>
-              <div class="author-info">
-                <strong>Alex M.</strong>
-                <span>Director, Sustainability Org</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card" data-index="1">
-            <div class="testimonial-stars">★★★★★</div>
-            <div class="testimonial-quote">
-              <p>"The strategy was sharp, the execution was clean, and working together was genuinely easy. Rare combination."</p>
-            </div>
-            <div class="testimonial-sep"></div>
-            <div class="testimonial-author">
-              <div class="photo-circle">S</div>
-              <div class="author-info">
-                <strong>Sara T.</strong>
-                <span>Founder, Tech Startup</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card" data-index="2">
-            <div class="testimonial-stars">★★★★★</div>
-            <div class="testimonial-quote">
-              <p>"Finally, a marketing person who doesn't talk in buzzwords. The content was thoughtful, clear, and actually performed."</p>
-            </div>
-            <div class="testimonial-sep"></div>
-            <div class="testimonial-author">
-              <div class="photo-circle">J</div>
-              <div class="author-info">
-                <strong>James O.</strong>
-                <span>Brand Manager, Research Institute</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Decorative corners -->
-          <div class="t-corner t-corner--bl" aria-hidden="true"></div>
-          <div class="t-corner t-corner--tr" aria-hidden="true"></div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FAQ
-       ============================================================ -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="faq-inner">
-        <div class="faq-left">
-          <span class="section-label">FAQ</span>
-          <h2>Things you might be <span class="hl hl--indigo">wondering</span></h2>
-          <p>If there's something I haven't covered, just ask. I don't bite and I don't do sales calls.</p>
-          <a href="#contact" class="btn btn-coral">Ask me directly</a>
-        </div>
-      <div class="faq-list">
-
-        <div class="faq-item">
-          <button class="faq-question">Do you only work with mission-led brands or organizations?</button>
-          <div class="faq-answer"><p>Not exclusively, but I do care about fit. I like working with people, brands, and organizations that are building something useful, thoughtful, or at least not deeply bleak.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Do you offer one-off projects?</button>
-          <div class="faq-answer"><p>Yes. Some clients need a strategy session, messaging support, or website copy. Others want ongoing content or social media help. Both work.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Do you do both strategy and execution?</button>
-          <div class="faq-answer"><p>Yes, and that combination is kind of the point. I can help shape the direction and make the actual thing.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Do you build full websites?</button>
-          <div class="faq-answer"><p>I focus on messaging, structure, landing pages, and lighter website support. I'm not trying to become a giant development agency overnight.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Can you help if we already have a brand?</button>
-          <div class="faq-answer"><p>Yes. A lot of the work is about refining what's already there and making it clearer, stronger, and more consistent.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">What kind of clients are the best fit?</button>
-          <div class="faq-answer"><p>Usually thoughtful brands, organizations, and teams with a point of view, some budget, and a real interest in doing things well.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">Do you work alone?</button>
-          <div class="faq-answer"><p>Mostly, yes. You will work directly with me. If a project needs additional skills or support, I sometimes bring in trusted freelance collaborators to make sure the work is done well.</p></div>
-        </div>
-
-      </div><!-- /faq-list -->
-      </div><!-- /faq-inner -->
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FINAL CTA BANNER
-       ============================================================ -->
-  <section class="cta-banner" id="contact">
-    <div class="container">
-      <span class="section-label" style="display:block;margin-bottom:24px;">Let's work together</span>
-      <h2>You don't need louder marketing.<br>You need <span class="hl hl--coral">better communication.</span></h2>
-      <p class="cta-love">I'd love to <span class="hl hl--amber">help.</span></p>
-      <a href="mailto:hello@studio.com" class="btn btn-dark">Let's have a chat</a>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <span class="footer-logo">[studio].</span>
-          <p>Smart communication for thoughtful brands and organizations.</p>
-        </div>
-        <div class="footer-col">
-          <h5>Navigation</h5>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="#services">Strategy</a></li>
-            <li><a href="#services">Content</a></li>
-            <li><a href="#services">Social Media</a></li>
-            <li><a href="#services">Websites</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contact</h5>
-          <ul>
-            <li><a href="mailto:hello@studio.com">hello@studio.com</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span>the good bit</span><span class="star brand-star">✹</span></a>
+        <p class="eyebrow">Creative marketing studio</p>
+        <p>We help thoughtful brands and startups stand out with smart strategy, playful design, and content that connects.</p>
+        <p class="signature">Good ideas. Real impact.</p>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 [Studio] &nbsp;·&nbsp; <a href="#">Terms</a> &nbsp;·&nbsp; <a href="#">Privacy</a></span>
+      <div>
+        <h3>Navigate</h3>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">Studio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Let’s talk</a>
       </div>
+      <div>
+        <h3>Services</h3>
+        <a href="#services">Strategy</a>
+        <a href="#services">Content</a>
+        <a href="#services">Design</a>
+        <a href="#services">Growth</a>
+        <a href="#services">Reporting</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="mailto:hello@thegoodbit.studio">hello@thegoodbit.studio</a>
+        <a href="tel:+442079460958">+44 20 7946 0958</a>
+        <p>London, UK</p>
+        <a class="footer-cta" href="#contact">Book a discovery call →</a>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Behance">Bē</a>
+        </div>
+        <div class="stamp">Good ideas.<br><span>Real impact.</span></div>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <span>© The Good Bit Studio Ltd. All rights reserved.</span>
+      <span>Privacy Policy / Terms &amp; Conditions / Cookies</span>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=desk-pass-20260525-1"></script>
 </body>
 </html>
