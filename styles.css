@@ -339,7 +339,7 @@ p {
 
 .hero-copy {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .lead {
@@ -361,6 +361,7 @@ p {
   min-height: 330px;
   isolation: isolate;
   overflow: visible;
+  z-index: 1;
 }
 
 .hero-main-img {
