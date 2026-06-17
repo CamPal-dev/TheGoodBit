@@ -352,6 +352,7 @@ p {
   position: relative;
   min-height: 330px;
   isolation: isolate;
+  overflow: visible;
 }
 
 .hero-main-img {
@@ -361,7 +362,7 @@ p {
   object-position: center center;
   display: block;
   mix-blend-mode: multiply;
-  transform: scale(1.35);
+  transform: scale(1.85);
   transform-origin: center center;
 }
 
