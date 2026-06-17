@@ -356,10 +356,9 @@ p {
 
 .hero-main-img {
   width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-  object-position: center 30%;
-  border-radius: var(--radius-lg);
+  max-height: 560px;
+  object-fit: contain;
+  object-position: center center;
   display: block;
 }
 
