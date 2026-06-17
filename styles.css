@@ -325,6 +325,9 @@ p {
 .hero {
   padding-top: clamp(70px, 7vw, 106px);
   padding-bottom: 24px;
+  overflow: visible;
+  position: relative;
+  z-index: 0;
 }
 
 .hero-grid {
@@ -332,6 +335,11 @@ p {
   grid-template-columns: minmax(0, 1fr) minmax(330px, 0.82fr);
   align-items: center;
   gap: clamp(30px, 4vw, 58px);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
 }
 
 .lead {
@@ -362,8 +370,10 @@ p {
   object-position: center center;
   display: block;
   mix-blend-mode: multiply;
-  transform: scale(1.2);
+  transform: scale(1.35);
   transform-origin: center center;
+  position: relative;
+  z-index: 0;
 }
 
 .blob {
@@ -459,6 +469,12 @@ img.star {
 
 .hero-note span {
   background: linear-gradient(var(--pink), var(--pink)) 0 100% / 100% 3px no-repeat;
+}
+
+.what {
+  position: relative;
+  z-index: 1;
+  background: var(--paper, #fff);
 }
 
 .what .wrap {
