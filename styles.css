@@ -361,6 +361,8 @@ p {
   object-position: center center;
   display: block;
   mix-blend-mode: multiply;
+  transform: scale(1.35);
+  transform-origin: center center;
 }
 
 .blob {
