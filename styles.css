@@ -362,7 +362,7 @@ p {
   object-position: center center;
   display: block;
   mix-blend-mode: multiply;
-  transform: scale(1.85);
+  transform: scale(1.5);
   transform-origin: center center;
 }
 
