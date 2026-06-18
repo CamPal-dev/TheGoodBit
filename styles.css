@@ -1574,6 +1574,13 @@ img.star {
   font-size: 1.25rem;
 }
 
+.faq-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .faq-answer {
   display: block;
   max-height: 0;
