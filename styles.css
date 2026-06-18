@@ -1579,6 +1579,22 @@ img.star {
   height: 36px;
   object-fit: contain;
   flex-shrink: 0;
+  transition: transform 0.18s ease;
+}
+
+.faq-question:hover .faq-icon {
+  transform: scale(1.18);
+}
+
+.faq-item.open .faq-icon {
+  animation: icon-pop 0.38s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}
+
+@keyframes icon-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.4); }
+  70%  { transform: scale(0.88); }
+  100% { transform: scale(1); }
 }
 
 .faq-answer {
