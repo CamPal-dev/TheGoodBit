@@ -475,7 +475,7 @@ img.star {
 .what {
   position: relative;
   z-index: 1;
-  background: var(--paper, #fff);
+  background: transparent;
 }
 
 .what .wrap {
