@@ -43,6 +43,14 @@ document.querySelectorAll('.faq-question').forEach(button => {
     const wasOpen = item.classList.contains('open');
     document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('open'));
     if (!wasOpen) item.classList.add('open');
+
+    const icon = button.querySelector('.faq-icon');
+    if (icon) {
+      icon.classList.remove('icon-pop');
+      void icon.offsetWidth;
+      icon.classList.add('icon-pop');
+      icon.addEventListener('animationend', () => icon.classList.remove('icon-pop'), { once: true });
+    }
   });
 });
 
