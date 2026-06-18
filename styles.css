@@ -690,6 +690,7 @@ img.star {
   padding: 14px 13px;
   font-size: 0.82rem;
   transform: rotate(-7deg);
+  z-index: 2;
 }
 
 .section-head {
