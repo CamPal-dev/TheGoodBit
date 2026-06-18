@@ -727,15 +727,19 @@ img.star {
   right: 0;
   top: 8px;
   font-size: 3.7rem;
+  width: 52px;
+  height: 52px;
+  z-index: 2;
 }
 
 .sticky-note {
   position: absolute;
   right: 54px;
   bottom: 12px;
-  padding: 14px 13px;
-  font-size: 0.82rem;
+  padding: 20px 18px;
+  font-size: 0.95rem;
   transform: rotate(4deg);
+  z-index: 1;
 }
 
 .service-grid {
