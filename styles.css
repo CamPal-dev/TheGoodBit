@@ -3080,13 +3080,13 @@ h3 {
 .process-lower {
   position: relative;
   display: block;
-  padding-left: 185px;
+  padding-right: 185px;
   min-height: 220px;
 }
 
 .process-sticker-wrap {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 0;
