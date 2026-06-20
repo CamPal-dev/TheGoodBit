@@ -3482,3 +3482,163 @@ body {
     animation: cta-glow 4.5s ease-in-out infinite;
   }
 }
+
+/* ============================================================
+   MOBILE FIX PASS
+   ============================================================ */
+
+/* ---- Tablet / large phone (≤ 760px) ---- */
+@media (max-width: 760px) {
+
+  /* Process: hide dandelion sticker, stack steps vertically */
+  .process-lower {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    min-height: 0 !important;
+    display: block !important;
+  }
+  .process-sticker-wrap {
+    display: none !important;
+  }
+  .process-flow.step-row {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    align-items: stretch !important;
+  }
+  .step-arrow {
+    display: block;
+    margin: 6px auto;
+    width: 24px;
+    transform: rotate(90deg);
+  }
+  .process-line {
+    display: none !important;
+  }
+
+  /* Decorative floating elements that cause overflow */
+  .head-art,
+  .promise-collage {
+    display: none !important;
+  }
+
+  /* Work hero: hide the decorative sticky/burst collage */
+  .work-collage {
+    display: none !important;
+  }
+  .work-hero {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  /* Case carousel: native horizontal scroll with touch snapping */
+  .case-carousel {
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 12px;
+  }
+  .case-card {
+    flex: 0 0 min(88vw, 340px);
+    scroll-snap-align: start;
+  }
+
+  /* Service tiles: hide the decorative image that overlaps text */
+  .service-tile .service-tile-img {
+    display: none !important;
+  }
+
+  /* About note */
+  .about-note {
+    left: -4px !important;
+    bottom: 12px !important;
+    width: 86px !important;
+    font-size: 0.78rem !important;
+    padding: 9px !important;
+  }
+
+}
+
+/* ---- Phone (≤ 640px) ---- */
+@media (max-width: 640px) {
+
+  /* Font sizes — the existing 640px rule sets h1 to clamp(2.8rem, 14vw, 4rem)
+     which is still far too large on a 390px screen. Override here. */
+  h1 {
+    font-size: clamp(1.85rem, 8.5vw, 2.8rem) !important;
+    line-height: 1.02 !important;
+  }
+
+  h2,
+  .promise-main h2,
+  .process-intro h2 {
+    font-size: clamp(1.5rem, 7.5vw, 2.3rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  /* Eyebrow: allow wrapping but don't force inline-flex which breaks it */
+  .eyebrow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+  }
+
+}
+
+/* ---- Small phone (≤ 480px) ---- */
+@media (max-width: 480px) {
+
+  /* Buttons: full-width stack */
+  .actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* FAQ: tighten spacing so question text has more room */
+  .faq-question {
+    grid-template-columns: 1fr auto !important;
+    padding: 16px !important;
+    gap: 12px !important;
+    align-items: start !important;
+  }
+  .faq-question span {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+    margin-bottom: 4px;
+  }
+  .faq-icon {
+    width: 28px !important;
+    height: 28px !important;
+    margin-top: 2px;
+  }
+  .faq-answer {
+    padding-left: 16px !important;
+  }
+
+  /* Promise board */
+  .promise-board {
+    min-height: 0 !important;
+    padding: 28px 20px !important;
+  }
+  .promise-cards {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stats: 2 columns on phone (they look great in screenshots already) */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Marquee */
+  .marquee-track span {
+    font-size: 0.82rem;
+  }
+
+}
