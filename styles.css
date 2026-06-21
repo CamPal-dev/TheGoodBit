@@ -166,9 +166,8 @@ p {
 }
 
 .brand-star {
-  margin-left: 8px;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   display: block;
   flex-shrink: 0;
 }
@@ -177,7 +176,7 @@ p {
 .marker {
   display: inline;
   padding: 0.05em 0.15em 0.1em;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M 0,11 C 40,8 80,11 120,9 C 155,7 178,10 200,9 L 200,21 C 178,23 155,21 120,23 C 80,25 40,22 0,22 Z' fill='rgba(255,212,59,0.68)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M 0,11 C 40,8 80,11 120,9 C 155,7 178,10 200,9 L 200,21 C 178,23 155,21 120,23 C 80,25 40,22 0,22 Z' fill='rgba(255,210,0,0.92)'/%3E%3C/svg%3E");
   background-size: 107% 88%;
   background-repeat: no-repeat;
   background-position: -2% center;
@@ -188,12 +187,12 @@ p {
 
 /* Stroke B — parallelogram/angled */
 .marker[data-stroke="b"] {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M 6,22 L 9,8 C 55,5 110,4 162,7 C 180,8 193,7 200,6 L 198,20 C 180,23 145,22 100,21 C 65,20 32,23 6,22 Z' fill='rgba(255,212,59,0.62)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M 6,22 L 9,8 C 55,5 110,4 162,7 C 180,8 193,7 200,6 L 198,20 C 180,23 145,22 100,21 C 65,20 32,23 6,22 Z' fill='rgba(255,210,0,0.92)'/%3E%3C/svg%3E");
 }
 
 /* Stroke C — wide rough brush */
 .marker[data-stroke="c"] {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M 0,9 C 22,6 52,9 82,7 C 112,5 142,8 168,7 C 182,6 194,8 200,7 L 200,23 C 192,26 168,24 142,23 C 112,22 82,25 52,24 C 28,23 12,25 0,24 Z' fill='rgba(255,212,59,0.7)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 28' preserveAspectRatio='none'%3E%3Cpath d='M 0,9 C 22,6 52,9 82,7 C 112,5 142,8 168,7 C 182,6 194,8 200,7 L 200,23 C 192,26 168,24 142,23 C 112,22 82,25 52,24 C 28,23 12,25 0,24 Z' fill='rgba(255,210,0,0.92)'/%3E%3C/svg%3E");
 }
 
 .small-marker {
@@ -280,20 +279,14 @@ p {
 }
 
 .brand-logo-wrap {
-  display: block;
-  width: 150px;
-  height: 46px;
-  overflow: hidden;
-  position: relative;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
 
 .brand-logo-img {
-  position: absolute;
-  width: 150px;
-  height: auto;
-  top: -55px;
-  left: 0;
+  height: 38px;
+  width: auto;
   display: block;
 }
 
@@ -332,9 +325,13 @@ p {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(330px, 0.82fr);
   align-items: center;
   gap: clamp(30px, 4vw, 58px);
+}
+@media (min-width: 761px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(330px, 0.82fr);
+  }
 }
 
 .hero-copy {
@@ -695,10 +692,14 @@ img.star {
 
 .section-head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
   align-items: end;
   gap: 28px;
   margin-bottom: 34px;
+}
+@media (min-width: 761px) {
+  .section-head {
+    grid-template-columns: minmax(0, 1fr) 280px;
+  }
 }
 
 .section-head h2,
@@ -2161,6 +2162,7 @@ p {
 
 .nav-cta {
   min-width: 166px;
+  border-radius: 999px;
 }
 
 .hero {
@@ -2905,6 +2907,7 @@ h3 {
 
 .nav-cta {
   min-width: 150px;
+  border-radius: 999px;
 }
 
 .btn {
