@@ -3578,22 +3578,106 @@ body {
     animation: none !important;
   }
 
-  /* ---- Service tiles: show images, clipped to card ---- */
+  /* ---- Service tiles: horizontal card — text left, image right ---- */
   .service-tile {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 14px !important;
+    min-height: 0 !important;
+    padding: 20px 18px !important;
     overflow: hidden !important;
-    min-height: 130px !important;
+  }
+  .service-tile > div {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+  .service-tile h3 {
+    font-size: 1.05rem !important;
+    max-width: none !important;
+    margin-bottom: 4px !important;
+  }
+  .service-tile p:not(.tile-kicker) {
+    font-size: 0.84rem !important;
+    max-width: none !important;
+    margin-bottom: 0 !important;
+  }
+  .service-tile .text-link {
+    display: none !important;
   }
   .service-tile .service-tile-img {
-    display: block !important;
-    position: absolute !important;
-    right: 12px !important;
-    bottom: 0 !important;
-    height: 100px !important;
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    height: 88px !important;
     width: auto !important;
-    opacity: 0.7 !important;
+    opacity: 1 !important;
+    flex-shrink: 0 !important;
+    display: block !important;
   }
   .service-tile::before {
     display: none !important;
+  }
+
+  /* ---- Promise dark cards: compact on mobile ---- */
+  .promise-board {
+    padding: 26px 20px !important;
+    min-height: 0 !important;
+  }
+  .dark-card {
+    min-height: 0 !important;
+    padding: 18px 16px !important;
+  }
+
+  /* ---- Process steps: stacked with badge number ---- */
+  .step-card {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    grid-template-rows: auto auto auto !important;
+    column-gap: 14px !important;
+    row-gap: 4px !important;
+    align-items: start !important;
+    padding: 18px !important;
+    min-height: 0 !important;
+  }
+  .step-card > span {
+    grid-column: 1 !important;
+    grid-row: 1 / -1 !important;
+    align-self: start !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    background: var(--pink) !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    font-size: 0.82rem !important;
+    font-weight: 900 !important;
+    font-family: var(--body) !important;
+  }
+  .step-card h3 {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    margin-top: 0 !important;
+    font-size: 1.05rem !important;
+    line-height: 1.2 !important;
+  }
+  .step-card p {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+    margin: 4px 0 0 !important;
+  }
+  .step-card small {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+    font-size: 0.78rem !important;
+    opacity: 0.65;
+    margin-top: 4px !important;
+    display: block !important;
   }
 
   /* ---- Case carousel: wide snap cards ---- */
