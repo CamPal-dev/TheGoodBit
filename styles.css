@@ -282,12 +282,16 @@ p {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  overflow: hidden;
+  height: 44px;
 }
 
 .brand-logo-img {
-  height: 38px;
-  width: auto;
+  width: 148px;
+  height: auto;
   display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nav-links {
