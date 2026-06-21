@@ -1434,9 +1434,9 @@ img.star {
   min-height: 0;
   padding: 36px 22px 24px;
   background: #fff;
-  border: 1.5px solid var(--border-soft);
-  border-radius: 20px;
-  box-shadow: 0 2px 16px rgba(13, 13, 13, 0.05);
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 4px 4px 0 var(--ink);
 }
 
 .quote-card {
@@ -2168,9 +2168,11 @@ p {
   padding-bottom: 12px;
 }
 
-.hero-grid {
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.68fr);
-  gap: clamp(24px, 3.5vw, 44px);
+@media (min-width: 761px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.68fr);
+    gap: clamp(24px, 3.5vw, 44px);
+  }
 }
 
 .lead {
@@ -2329,8 +2331,12 @@ p {
 }
 
 .section-head {
-  grid-template-columns: minmax(0, 1fr) 210px;
   margin-bottom: 26px;
+}
+@media (min-width: 761px) {
+  .section-head {
+    grid-template-columns: minmax(0, 1fr) 210px;
+  }
 }
 
 .section-head h2,
@@ -2911,9 +2917,11 @@ h3 {
   padding-top: clamp(50px, 5.4vw, 77px);
 }
 
-.hero-grid {
-  grid-template-columns: minmax(0, 1fr) minmax(235px, 0.66fr);
-  gap: clamp(20px, 3vw, 38px);
+@media (min-width: 761px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(235px, 0.66fr);
+    gap: clamp(20px, 3vw, 38px);
+  }
 }
 
 .lead,
@@ -3489,41 +3497,35 @@ body {
 
 @media (max-width: 760px) {
 
-  /* ---- CRITICAL: multiple global passes re-set these to multi-column.
-     Force single-column with !important so source-order can't win. ---- */
-  .hero-grid,
+  /* ---- Grids that still need forcing (hero-grid fixed at source above) ---- */
   .section-head,
   .pricing-head,
   .work-hero,
-  .faq-grid {
+  .faq-grid,
+  .about-grid {
     grid-template-columns: 1fr !important;
-    gap: 16px !important;
+    gap: 20px !important;
   }
 
-  /* ---- Hide all decorative right-column floating elements ---- */
+  /* ---- Hide floating decorative elements ---- */
   .head-art,
   .promise-collage,
   .work-collage {
     display: none !important;
   }
 
-  /* ---- Hero: stack copy on top, collage below ---- */
-  .collage {
-    min-height: 280px !important;
-  }
-
-  /* ---- Hamburger: cleaner — just bars, no circle ---- */
+  /* ---- Hamburger: pill-style button matching nav aesthetic ---- */
   .hamburger {
-    width: 44px !important;
-    height: 44px !important;
-    border: none !important;
-    border-radius: 6px !important;
-    background: transparent !important;
+    width: 46px !important;
+    height: 36px !important;
+    border: 1.5px solid var(--border) !important;
+    border-radius: 8px !important;
+    background: rgba(255, 253, 247, 0.9) !important;
+    gap: 5px !important;
   }
   .hamburger span {
-    width: 22px !important;
-    height: 2.5px !important;
-    border-radius: 2px;
+    width: 20px !important;
+    height: 2px !important;
   }
 
   /* ---- Process: hide dandelion, stack steps vertically ---- */
@@ -3549,7 +3551,7 @@ body {
     animation: none !important;
   }
 
-  /* ---- Service tiles: keep the images but smaller and clipped to card ---- */
+  /* ---- Service tiles: show images, clipped to card ---- */
   .service-tile {
     overflow: hidden !important;
     min-height: 130px !important;
@@ -3567,7 +3569,7 @@ body {
     display: none !important;
   }
 
-  /* ---- Case carousel: wide snap ---- */
+  /* ---- Case carousel: wide snap cards ---- */
   .case-carousel {
     display: flex !important;
     overflow-x: auto;
@@ -3577,32 +3579,44 @@ body {
     padding-bottom: 12px;
   }
   .case-card {
-    flex: 0 0 92vw !important;
+    flex: 0 0 90vw !important;
     scroll-snap-align: start;
     max-width: 380px;
   }
 
-  /* ---- Testimonials: convert to horizontal scroll carousel ---- */
+  /* ---- Carousel nav: centered below both carousels ---- */
+  .carousel-nav {
+    justify-content: center !important;
+    margin-top: 16px !important;
+  }
+
+  /* ---- Testimonials: horizontal scroll carousel ---- */
   .quote-grid {
     display: flex !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 14px;
-    padding-bottom: 12px;
+    padding-bottom: 4px;
   }
   .quote-card {
     flex: 0 0 88vw !important;
     scroll-snap-align: start;
     min-width: 0;
+    box-shadow: 4px 4px 0 var(--ink) !important;
+    border-color: var(--ink) !important;
+  }
+  /* Hide quote carousel nav on desktop */
+  .quote-carousel-nav {
+    display: none;
   }
 
-  /* ---- Pricing: give featured card room for the "Most Popular" badge ---- */
+  /* ---- Pricing: room for "Most Popular" badge ---- */
   .price-card.featured {
     margin-top: 24px !important;
   }
 
-  /* ---- About note stays inside its collage ---- */
+  /* ---- About note ---- */
   .about-note {
     left: -4px !important;
     bottom: 12px !important;
@@ -3611,17 +3625,25 @@ body {
     padding: 9px !important;
   }
 
-  /* ---- Stats: 2-col ---- */
+  /* ---- Stats: 2-col on tablet ---- */
   .stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 12px !important;
+    gap: 20px !important;
+    margin-top: 32px !important;
   }
 
 }
 
+/* Show quote carousel nav only on mobile */
+@media (min-width: 761px) {
+  .quote-carousel-nav {
+    display: none !important;
+  }
+}
+
 @media (max-width: 640px) {
 
-  /* ---- Font sizes: override every prior pass ---- */
+  /* ---- Font sizes ---- */
   h1 {
     font-size: clamp(1.85rem, 8.5vw, 2.6rem) !important;
     line-height: 1.04 !important;
@@ -3656,25 +3678,33 @@ body {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  /* ---- FAQ ---- */
+  /* ---- FAQ: number on top row, question+icon on second row ---- */
   .faq-question {
     grid-template-columns: 1fr auto !important;
-    padding: 16px !important;
+    padding: 16px 18px !important;
     gap: 12px !important;
-    align-items: start !important;
+    align-items: center !important;
   }
   .faq-question span {
     grid-column: 1 / -1 !important;
     grid-row: 1 !important;
+    margin-bottom: 2px;
   }
   .faq-icon {
-    width: 28px !important;
-    height: 28px !important;
-    grid-row: 2;
-    align-self: center;
+    width: 30px !important;
+    height: 30px !important;
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    align-self: start;
+    margin-top: 2px;
   }
   .faq-answer {
-    padding-left: 16px !important;
+    padding-left: 18px !important;
+  }
+
+  /* ---- Stats: single column on small phones ---- */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   /* ---- Marquee ---- */

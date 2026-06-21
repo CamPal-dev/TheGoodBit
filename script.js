@@ -84,6 +84,25 @@ if (caseCarousel && casePrev && caseNext) {
   });
 }
 
+// Quote / testimonial carousel
+const quoteCarousel = document.getElementById('quoteCarousel');
+const quotePrev     = document.getElementById('quotePrev');
+const quoteNext     = document.getElementById('quoteNext');
+
+if (quoteCarousel && quotePrev && quoteNext) {
+  const quoteCardWidth = () => {
+    const card = quoteCarousel.querySelector('.quote-card');
+    const gap  = parseFloat(getComputedStyle(quoteCarousel).columnGap) || 14;
+    return card ? card.offsetWidth + gap : 300;
+  };
+  quotePrev.addEventListener('click', () => {
+    quoteCarousel.scrollBy({ left: -quoteCardWidth(), behavior: 'smooth' });
+  });
+  quoteNext.addEventListener('click', () => {
+    quoteCarousel.scrollBy({ left: quoteCardWidth(), behavior: 'smooth' });
+  });
+}
+
 // GSAP scroll reveals
 gsap.registerPlugin(ScrollTrigger);
 
