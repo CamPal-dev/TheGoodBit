@@ -38,6 +38,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
   font-family: var(--body);
   font-size: 16px;
   line-height: 1.55;
-  overflow-x: clip;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -279,19 +280,21 @@ p {
 }
 
 .brand-logo-wrap {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+  display: block;
+  width: 150px;
+  height: 46px;
   overflow: hidden;
-  height: 44px;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .brand-logo-img {
-  width: 148px;
+  position: absolute;
+  width: 150px;
   height: auto;
+  top: -55px;
+  left: 0;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .nav-links {
@@ -1924,6 +1927,10 @@ img.star {
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .brand-star {
     display: none;
   }
 
