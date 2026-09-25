@@ -1,779 +1,596 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Good Bit - Strategy, content, and digital communication</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=pink-fix-22jun" />
+<meta charset="utf-8"/>
+<meta content="The Good Bit is a small digital marketing studio led by Cam. Clear strategy, distinctive copy, and digital content with a human touch." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Good Bit — A small digital marketing studio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#home" class="brand" aria-label="The Good Bit home">
-        <span class="brand-logo-wrap">
-          <img src="goodbitless.png" alt="The Good Bit" class="brand-logo-img">
-        </span>
-        <img src="logo.png" alt="" class="brand-star" aria-hidden="true">
-      </a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-      <a href="#contact" class="btn btn-pink nav-cta">Book a discovery call <span aria-hidden="true">↗</span></a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <button class="star-menu-btn" id="starMenuBtn" aria-label="Open menu" aria-expanded="false">
-        <img src="logo.png" alt="" aria-hidden="true">
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact" class="btn btn-pink">Book a discovery call <span aria-hidden="true">↗</span></a>
-    </div>
-  </nav>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="navbar" id="navbar">
+<div class="nav-inner">
+<a aria-label="The Good Bit home" class="brand" href="#home">
+<span class="brand-logo-wrap">
+<img alt="The Good Bit" class="brand-logo-img" height="87" src="assets/optimized/goodbitless.webp" width="500"/>
+</span>
+<img alt="" aria-hidden="true" class="brand-star" height="500" src="assets/optimized/logo.webp" width="488"/>
+</a>
+<ul class="nav-links"><li><a href="#work">Work</a></li>
+<li><a href="#services">Services</a></li>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">Solo-led creative marketing studio</p>
-          <h1>Find the good bit. <span class="marker">Say it like you mean it.</span></h1>
-          <p class="lead">The Good Bit Studio helps thoughtful brands, founders, creatives, researchers, and small teams get clear on what they are trying to say, then turn it into strategy, copy, content, and creative work people actually understand.</p>
-          <p class="lead">Small by design. Flexible when useful. Just sharper ideas, better content, and a clearer reason for people to care.</p>
-          <div class="actions">
-            <a href="#contact" class="btn btn-pink">Book a discovery call <span aria-hidden="true">↗</span></a>
-            <a href="#work" class="btn btn-outline">See the work</a>
-            <svg class="doodle-svg hero-arrow-doodle" aria-hidden="true" viewBox="0 0 55 68" fill="none">
-              <path class="doodle-path" d="M 48,6 C 56,22 53,44 38,56 C 30,63 18,67 8,63" stroke="#f2387b" stroke-width="2.5" stroke-linecap="round"/>
-              <path class="doodle-path" d="M 8,63 L 3,54 M 8,63 L 18,58" stroke="#f2387b" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-        </div>
-        <div class="hero-collage collage" aria-label="The Good Bit">
-          <img src="hero2.png" alt="" class="hero-main-img">
-        </div>
-      </div>
-    </section>
+<li><a href="#about">About</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+<a class="btn btn-pink nav-cta" href="#contact">Let’s talk ↗</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="hamburger" hidden="" id="hamburger">
+<span></span><span></span><span></span>
+</button>
+</div>
+<div aria-label="Mobile navigation" class="mobile-menu" id="mobileMenu"><a href="#work">Work</a>
+<a href="#services">Services</a>
 
-<section class="what strip-section compact" aria-label="What we do">
-      <div class="wrap">
-        <div class="what-grid">
-          <a class="mini-card" href="#services">
-            <span class="card-icon"><img src="centro.png" alt="" class="icon-img"></span>
-            <h2>Strategy</h2>
-            <p>Get clear on who you are, what you stand for, and why anyone should care.</p>
-            <span class="arrow">→</span>
-          </a>
-          <a class="mini-card" href="#services">
-            <span class="card-icon"><img src="pencil.png" alt="" class="icon-img"></span>
-            <h2>Copywriting</h2>
-            <p>Words that do something. Stories that stick. Ideas that don't read like a content calendar.</p>
-            <span class="arrow">→</span>
-          </a>
-          <a class="mini-card" href="#services">
-            <span class="card-icon"><img src="site.png" alt="" class="icon-img"></span>
-            <h2>Digital</h2>
-            <p>Websites and digital experiences built to be useful first, beautiful second — and usually both.</p>
-            <span class="arrow">→</span>
-          </a>
-          <a class="mini-card" href="#services">
-            <span class="card-icon"><img src="mega.png" alt="" class="icon-img"></span>
-            <h2>Social &amp; Creative</h2>
-            <p>Content that builds something over time. Less viral moment, more lasting presence.</p>
-            <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
+<a href="#about">About</a>
+<a href="#faq">FAQ</a>
+<a class="btn btn-pink" href="#contact">Let’s talk ↗</a>
+</div>
+</nav>
+<main id="main">
+<section class="hero section hero-type" id="home">
+<div class="wrap hero-copy">
+<p class="eyebrow">A small digital marketing studio</p>
+<h1>Find the <em>good bit.</em><br/>Say it like<br/>you mean it.</h1>
+<p class="lead">I turn good ideas into clear strategy, distinctive words, and digital content that connects.</p>
+<div class="actions"><a class="btn btn-pink" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a><a class="text-link" href="#work">See my work <span aria-hidden="true">↗</span></a></div>
+<p class="hero-footnote">Strategy <span aria-hidden="true">/</span> Copy <span aria-hidden="true">/</span> Content</p>
+</div>
+</section><section class="work section" id="work">
+<div class="wrap">
+<div class="work-hero">
+<div>
+<p class="eyebrow">Work &amp; Experience <img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/></p>
+<h2>Good ideas, out in the world.</h2>
+<p>Before starting The Good Bit, I worked across communications, content, SEO, social media, and digital projects for organisations in science, technology, culture, and beyond.</p>
+<p>A selection of direct client work and projects delivered with agencies, studios, and in-house teams.</p>
+</div>
+<div class="work-collage">
+<div class="paper-note">Human &amp;<br/>smart ideas.<br/>Real results.</div>
+<img alt="" aria-hidden="true" class="burst" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>
+</div>
+</div>
+<div class="trusted">
+<p><span class="icon-pink">♥</span> Trusted by</p>
+<span>CGIAR</span>
+<span>CERN</span>
+<span>SONY</span>
+<span>PICO XR</span>
+<a href="#contact">+ more good bits <img alt="" aria-hidden="true" class="arrow-img" decoding="async" height="500" loading="lazy" src="assets/optimized/arrow.webp" style="transform:rotate(-45deg);" width="500"/></a>
+</div>
+<div class="case-carousel-wrap">
+<div class="case-carousel" id="caseCarousel">
+<article class="case-card case-cgiar">
+<div class="case-card-inner">
+<div class="case-img-area ci-cgiar"><img alt="CGIAR Genebank Platform" class="case-img" decoding="async" height="1200" loading="lazy" src="assets/optimized/cgiar.webp" width="1200"/></div>
+<div class="case-body">
+<span class="case-tag">Digital platform</span>
+<h3>CGIAR Genebank Platform</h3>
+<p>A unified digital platform improving access to crop data for food security worldwide.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">Digital platform</span>
+<h3>CGIAR Genebank Platform</h3>
+<p>11 genebanks. 650,000+ crop samples. One unified story. I contributed to the digital strategy, IA, and editorial voice for the world's largest crop diversity network.</p>
+<ul class="case-deliverables">
+<li>Website redesign</li>
+<li>Content strategy</li>
+<li>UX architecture</li>
+<li>Editorial guidelines</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article>
+<article class="case-card case-cern">
+<div class="case-card-inner">
+<div class="case-img-area ci-cern"><img alt="CERN Idea Square" class="case-img" decoding="async" height="1200" loading="lazy" src="assets/optimized/cern.webp" width="1200"/></div>
+<div class="case-body">
+<span class="case-tag">Brand &amp; campaign</span>
+<h3>CERN Idea Square</h3>
+<p>A global campaign making particle physics curious, clear, and seriously cool.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">Brand &amp; campaign</span>
+<h3>CERN Idea Square</h3>
+<p>Particle physics is one of science's best stories — it just needed a better narrator. I contributed to the campaign strategy, brand narrative, and social content for CERN's innovation hub.</p>
+<ul class="case-deliverables">
+<li>Campaign strategy</li>
+<li>Brand identity</li>
+<li>Social content</li>
+<li>Event materials</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article>
+<article class="case-card case-sony">
+<div class="case-card-inner">
+<div class="case-img-area ci-sony"><img alt="Sony Creators Cloud" class="case-img" decoding="async" height="1200" loading="lazy" src="assets/optimized/sony.webp" width="1200"/></div>
+<div class="case-body">
+<span class="case-tag">Product experience</span>
+<h3>Sony Creators’ Cloud</h3>
+<p>A content management platform built for creators, by creators.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">Product experience</span>
+<h3>Sony Creators’ Cloud</h3>
+<p>Professional creatives needed more than software — they needed a platform that spoke their language. I worked on the product story, onboarding, and editorial voice end-to-end.</p>
+<ul class="case-deliverables">
+<li>UX copywriting</li>
+<li>Onboarding content</li>
+<li>Product messaging</li>
+<li>Help documentation</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article>
+<article class="case-card case-pico">
+<div class="case-card-inner">
+<div class="case-img-area ci-pico"><img alt="PICO XR Global Brand Launch" class="case-img" decoding="async" height="1200" loading="lazy" src="assets/optimized/pico-xr.webp" width="1200"/></div>
+<div class="case-body">
+<span class="case-tag">XR &amp; immersive</span>
+<h3>PICO XR Global Brand Launch</h3>
+<p>Positioning and campaign for the next era of immersive exploration.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">XR &amp; immersive</span>
+<h3>PICO XR Global Launch</h3>
+<p>Entering immersive XR markets is hard. I contributed to the positioning, campaign narrative, and brand voice for PICO's global consumer launch into Western markets.</p>
+<ul class="case-deliverables">
+<li>Brand positioning</li>
+<li>Launch strategy</li>
+<li>Campaign copy</li>
+<li>Social media</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article>
+</div><details class="more-work"><summary>Explore four more projects</summary><div class="case-carousel"><article class="case-card case-babbo">
+<div class="case-card-inner">
+<div class="case-img-area ci-bloom"><img alt="BABBO Foods" class="case-img" decoding="async" height="1200" loading="lazy" src="assets/optimized/babbo-foods.webp" width="1200"/></div>
+<div class="case-body">
+<span class="case-tag">Brand &amp; social</span>
+<h3>BABBO Foods</h3>
+<p>Brand story and social content for an artisan Italian food brand with something real to say.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">Brand &amp; social</span>
+<h3>BABBO Foods</h3>
+<p>Real ingredients, real story. I contributed to BABBO's brand voice, social content, and campaign platform around what genuinely makes them good — Tuscany, craft, and no compromise.</p>
+<ul class="case-deliverables">
+<li>Brand strategy</li>
+<li>Social content</li>
+<li>Campaign copy</li>
+<li>Packaging voice</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article><article class="case-card case-curb">
+<div class="case-card-inner">
+<div class="case-img-area ci-meridian"><img alt="Curb Taxi" class="case-img" decoding="async" height="1200" loading="lazy" src="assets/optimized/curb.webp" width="1200"/></div>
+<div class="case-body">
+<span class="case-tag">DOOH &amp; Social</span>
+<h3>Curb Taxi DOOH Content</h3>
+<p>Punchy street-level visuals and social-first creative for a moving brand.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">DOOH &amp; Social</span>
+<h3>Curb Taxi DOOH</h3>
+<p>Street-level content that stops people mid-commute. I contributed to the DOOH display content and social creative for Curb’s urban presence — visuals that move, literally.</p>
+<ul class="case-deliverables">
+<li>DOOH content</li>
+<li>Social creative</li>
+<li>Campaign copy</li>
+<li>Art direction</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article><article class="case-card case-orbit">
+<div class="case-card-inner">
+<div class="case-img-area ci-orbit case-type-cover">Orbit Labs</div>
+<div class="case-body">
+<span class="case-tag">Digital &amp; design</span>
+<h3>Orbit Labs</h3>
+<p>A product website built to convert curious visitors into loyal users.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">Digital &amp; design</span>
+<h3>Orbit Labs</h3>
+<p>A deep-tech startup that needed to talk to humans. I worked on the design and copy for their product site — clear, confident, and impossible to misunderstand.</p>
+<ul class="case-deliverables">
+<li>Web design</li>
+<li>UX writing</li>
+<li>Conversion copy</li>
+<li>Launch assets</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article><article class="case-card case-kin">
+<div class="case-card-inner">
+<div class="case-img-area ci-kin case-type-cover">Kin &amp; Kind</div>
+<div class="case-body">
+<span class="case-tag">Social &amp; creative</span>
+<h3>Kin &amp; Kind</h3>
+<p>A year-round social presence built around community, not content for content’s sake.</p>
+</div>
+<details class="case-details"><summary>Project details</summary><div class="case-back-inner">
+<span class="case-tag">Social &amp; creative</span>
+<h3>Kin &amp; Kind</h3>
+<p>A sustainable brand with an audience that cared deeply — but a social presence that didn't match. I contributed to a year of content that felt like them, not the algorithm.</p>
+<ul class="case-deliverables">
+<li>Social strategy</li>
+<li>Content pillars</li>
+<li>Creative direction</li>
+<li>Monthly content</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Work with me ↗</a>
+</div></details></div>
+</article></div></details>
+</div>
+<a class="btn btn-pink centered" href="#contact">Talk to me about a project <span aria-hidden="true">↗</span></a>
+</div>
+</section>
+<section class="promise section">
+<div class="wrap promise-board">
+<div class="promise-main">
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>My approach</p>
+<h2>Clear beats <span class="marker" data-stroke="b">clever.</span></h2>
+<p>Good communication starts with a clear point.</p>
+<p>I help you find what matters, then shape the strategy, words, and creative direction around it. Useful, human, and true to you.</p>
+</div>
+<div class="promise-cards">
+<article class="dark-card">
+<span class="card-icon icon-pink">✹</span>
+<h3>Clarity first</h3>
+<p>I cut the noise until the point is obvious.</p>
+</article>
+<article class="dark-card">
+<span class="card-icon icon-pink">☺</span>
+<h3>Human &amp; smart</h3>
+<p>Strategy with a brain. Copy with a pulse.</p>
+</article>
+<article class="dark-card">
+<span class="card-icon icon-blue">〜</span>
+<h3>Slow on purpose</h3>
+<p>No panic posting. No content treadmill.</p>
+</article>
+<article class="dark-card">
+<span class="card-icon icon-yellow">✦</span>
+<h3>Built to last</h3>
+<p>Work that still makes sense six months from now.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="services section" id="services">
+<div class="wrap">
+<div class="section-head services-head">
+<div>
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>What I do</p>
+<h2>Strategy, content, and creative <span class="marker" data-stroke="c">with a point.</span></h2>
+<p>From finding your positioning to writing your next campaign, I help you make your message clear and put it to work.</p>
+</div>
+<div class="head-art">
+<img alt="" aria-hidden="true" class="burst" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>
+<div class="sticky-note">Human<br/>Smart<br/>Creative</div>
+</div>
+</div>
+<div class="service-grid">
+<article class="service-tile tint-pink">
+<div>
+<p class="tile-kicker">01 / Strategy</p>
+<h3>Strategy &amp; positioning</h3>
+<p>Get clear on who you are, what you stand for, and why anyone should care. (The fun bit, honestly.)</p>
+<a class="text-link" href="#work">See my work <img alt="" aria-hidden="true" class="arrow-img" decoding="async" height="500" loading="lazy" src="assets/optimized/arrow.webp" width="500"/></a>
+</div>
+<img alt="" aria-hidden="true" class="service-tile-img service-tile-img-m" decoding="async" height="500" loading="lazy" src="assets/optimized/7.webp" width="500"/>
+</article>
+<article class="service-tile tint-blue">
+<div>
+<p class="tile-kicker blue">02 / Copywriting</p>
+<h3>Copywriting &amp; content</h3>
+<p>Words that do something. Stories that stick. Ideas that don't read like they were written by a content calendar.</p>
+<a class="text-link" href="#work">See my work <img alt="" aria-hidden="true" class="arrow-img" decoding="async" height="500" loading="lazy" src="assets/optimized/arrow.webp" width="500"/></a>
+</div>
+<img alt="" aria-hidden="true" class="service-tile-img" decoding="async" height="500" loading="lazy" src="assets/optimized/10.webp" width="500"/>
+</article>
+<article class="service-tile tint-yellow">
+<div>
+<p class="tile-kicker yellow">03 / Web Design</p>
+<h3>Digital &amp; design</h3>
+<p>Websites and digital experiences built to be useful first, beautiful second — and usually both.</p>
+<a class="text-link" href="#work">See my work <img alt="" aria-hidden="true" class="arrow-img" decoding="async" height="500" loading="lazy" src="assets/optimized/arrow.webp" width="500"/></a>
+</div>
+<img alt="" aria-hidden="true" class="service-tile-img" decoding="async" height="500" loading="lazy" src="assets/optimized/5.webp" width="500"/>
+</article>
+<article class="service-tile tint-lilac">
+<div>
+<p class="tile-kicker purple">04 / Social Media</p>
+<h3>Social &amp; creative</h3>
+<p>Content that builds something over time. Less viral moment, more lasting presence.</p>
+<a class="text-link" href="#work">See my work <img alt="" aria-hidden="true" class="arrow-img" decoding="async" height="500" loading="lazy" src="assets/optimized/arrow.webp" width="500"/></a>
+</div>
+<img alt="" aria-hidden="true" class="service-tile-img" decoding="async" height="500" loading="lazy" src="assets/optimized/8.webp" width="500"/>
+</article>
+</div>
+</div>
+</section>
+<section class="process section" id="process">
+<div class="wrap process-board">
+<div class="process-intro">
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>Process</p>
+<h2>From first thought to the finished thing.</h2>
+<p>I start by understanding your work, shape the message, and refine the details with you. A clear process, with room for good ideas.</p>
+</div>
+<div class="process-lower">
+<div class="step-row process-flow">
+<article class="step-card">
+<span>01</span>
+<h3>Discover</h3>
+<p>I ask the useful questions: what are you trying to say, who needs to hear it, and what keeps getting lost?</p>
+<small>This part takes longer than people expect. That's the point.</small>
+</article>
+<article class="step-card">
+<span>02</span>
+<h3>Shape the message</h3>
+<p>I turn that direction into strategy, messaging, copy, or content, depending on what your project needs.</p>
+<small>Ideas with direction.</small>
+</article>
+<article class="step-card">
+<span>03</span>
+<h3>Deliver</h3>
+<p>I refine the work with your feedback and deliver it ready to use, with a clear handover.</p>
+<small>Built to make impact.</small>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="pricing section" id="pricing">
+<div class="wrap">
+<div class="pricing-head">
+<div>
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>Ways to work together</p>
+<h2>Simple ways to <span class="marker" data-stroke="c">start.</span></h2>
+<p>A focused project, ongoing support, or a scope built around you. I keep deliverables clear and timelines realistic.</p>
+<p>Not sure what you need yet? That is normal. That is what the discovery call is for.</p>
+</div>
+<div class="paper-note large-note">Not sure where to start?<br/><span>Let's figure it out together.</span><a href="#contact">Let’s talk ↗</a></div>
+</div>
+<div class="price-grid">
+<article class="price-card">
+<h3>Starter</h3>
+<p>For a specific thing you need to get right. A strategy session, a content plan, two core deliverables. Good for testing the water.</p>
+<strong>£1,500</strong>
+<span>One-off project</span>
+<ul>
+<li>Strategy session</li>
+<li>Content plan</li>
+<li>2 core deliverables</li>
+<li>Email support</li>
+</ul>
+<a class="btn btn-outline" href="#contact">Get started <img alt="" aria-hidden="true" class="arrow-img" decoding="async" height="500" loading="lazy" src="assets/optimized/arrow.webp" width="500"/></a>
+</article>
+<article class="price-card featured">
+<div class="popular">Most popular</div>
+<h3>Growth</h3>
+<p>For brands ready to build consistently. Everything in Starter, plus ongoing content, a landing page or site, and someone who actually picks up the phone.</p>
+<strong>£3,000</strong>
+<span>Per month</span>
+<ul>
+<li>Everything in Starter</li>
+<li>Ongoing content</li>
+<li>Landing page / site</li>
+<li>Priority support</li>
+</ul>
+<a class="btn btn-pink" href="#contact">Let’s talk ↗</a>
+</article>
+<article class="price-card">
+<h3>Bespoke</h3>
+<p>Your situation doesn't fit a package. Fine — neither does mine. Tell me what you're trying to do and I’ll help you figure out the right shape together.</p>
+<strong>Custom</strong>
+<span>Tailored to you</span>
+<ul>
+<li>Tailored strategy</li>
+<li>Custom scope</li>
+<li>Dedicated support</li>
+<li>Flexible terms</li>
+</ul>
+<a class="btn btn-outline" href="#contact">Let’s talk ↗</a>
+</article>
+</div>
+</div>
+</section>
+<section class="about section" id="about">
+<div class="wrap">
+<div class="about-grid">
+<div>
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>About The Good Bit</p>
+<h2>Hi, I'm <span class="marker">Cam.</span></h2>
+<p>I started The Good Bit because most communication problems are <em>actually</em> clarity problems.</p>
+<p>When you're clear on who you are, what you stand for, and what you want to say, saying it well becomes a lot easier. That's where I come in: finding the good bit. The idea at the center of your work that has a pulse, and is genuinely worth sharing.</p>
+<p>I'm an interdisciplinary creative with a background across writing, strategy, photography, music, and digital communication. From there, I help shape everything else: brand voice, messaging, content, and digital presence — not by being louder, but by being clearer.</p>
+<div class="actions">
+<a class="btn btn-pink" href="#contact">Let's make something good. <span aria-hidden="true">→</span></a>
+<a class="btn btn-outline" href="#work">See my work <img alt="" aria-hidden="true" class="arrow-img" decoding="async" height="500" loading="lazy" src="assets/optimized/arrow.webp" width="500"/></a>
+</div>
+</div>
+<figure class="portrait-collage">
+<img alt="Cam, founder of The Good Bit" class="portrait-img" decoding="async" height="1200" loading="lazy" src="assets/optimized/that-smeok.webp" width="1200"/>
+<div class="paper-note about-note">that's me!</div>
+</figure>
+</div>
+<div class="quick-facts">
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>Quick facts</p>
+<div class="fact-pills">
+<span class="fact-pill">🌐 EN / IT / FR / ES / NL</span>
+<span class="fact-pill">📍 USA / Italy / France / Netherlands</span>
+<span class="fact-pill">🤓 8+ years</span>
+<span class="fact-pill">🎨 Interdisciplinary creative</span>
+<span class="fact-pill">🎵 Musician / photographer / writer</span>
+<span class="fact-pill">🧠 Strategy / content / digital</span>
+</div>
+</div>
+<div class="stats-grid">
+<article>
+<div class="stat-badge"><img alt="" class="stat-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/smile.webp" width="500"/></div>
+<strong>8+</strong>
+<span class="stats-label">Years</span>
+<hr class="stats-divider"/>
+<p>Helping bold ideas find their voice.</p>
+</article>
+<article>
+<div class="stat-badge"><img alt="" class="stat-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/star.webp" width="500"/></div>
+<strong>50+</strong>
+<span class="stats-label">Projects</span>
+<hr class="stats-divider"/>
+<p>Delivered across startups, scaleups, and global teams.</p>
+</article>
+<article>
+<div class="stat-badge"><img alt="" class="stat-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/></div>
+<strong>5</strong>
+<span class="stats-label">Languages</span>
+<hr class="stats-divider"/>
+<p>English, Italian, French, Spanish, Dutch.</p>
+</article>
+<article>
+<div class="stat-badge"><img alt="" class="stat-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/heart.webp" width="500"/></div>
+<strong>100%</strong>
+<span class="stats-label">Human</span>
+<hr class="stats-divider"/>
+<p>Strategy-led, creativity-driven, always people-first.</p>
+</article>
+</div>
+<div class="kind-words">
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>Kind words</p>
+<div class="quote-grid" id="quoteCarousel">
+<article class="quote-card">
+<span>"</span>
+<p>Cam gets it. Fast. The work is smart, strategic, and actually sounds like us: just better.</p>
+<strong>Maya Lee</strong>
+<small>Founder, ClearPeak</small>
+</article>
+<article class="quote-card">
+<span>"</span>
+<p>Working with Cam is like having a creative partner who's equal parts brain and gut.</p>
+<strong>Jordan Pierce</strong>
+<small>COO, Tally</small>
+</article>
+<article class="quote-card">
+<span>"</span>
+<p>From positioning to copy to campaigns, The Good Bit helped us grow with clarity and voice.</p>
+<strong>Riley Chen</strong>
+<small>Head of Growth, Loop</small>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="faq section" id="faq">
+<div class="wrap faq-grid">
+<div>
+<p class="eyebrow"><img alt="" aria-hidden="true" class="mini-star-img" decoding="async" height="500" loading="lazy" src="assets/optimized/logo.webp" width="488"/>FAQ</p>
+<h2>Things you might be <span class="marker" data-stroke="c">wondering.</span></h2>
+<p>Straight answers. No fog machine.</p>
+<div class="faq-doodle">✈︎<span>Curious minds welcome.</span></div>
+</div>
+<div class="faq-list">
+<details class="faq-item">
+<summary class="faq-question"><span>01 / FAQ</span>Is The Good Bit just you?<img alt="" aria-hidden="true" class="faq-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/faq1.webp" width="500"/></summary>
+<div class="faq-answer">Yes. I run The Good Bit as a small digital marketing studio. I lead the strategy, messaging, writing, and creative direction, so you work directly with me. For larger or more specialised projects, I bring in trusted collaborators.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question"><span>02 / FAQ</span>Do you work with agencies and other studios?<img alt="" aria-hidden="true" class="faq-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/faq2.webp" width="500"/></summary>
+<div class="faq-answer">Yes. I work directly with clients, and I also collaborate with agencies, studios, and creative teams that need support with strategy, copywriting, messaging, content, editorial work, or social media. Some projects are led by The Good Bit. Others are collaborations or specialist contributions inside a wider team. Either way, the role is always clear.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question"><span>03 / FAQ</span>What kind of work do you do?<img alt="" aria-hidden="true" class="faq-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/faq3.webp" width="500"/></summary>
+<div class="faq-answer">Strategy, messaging, copywriting, content, social media, editorial planning, campaign ideas, brand voice, and creative direction. I can also support web presence and landing page projects, especially around messaging, structure, copy, and creative direction. For design and development, I collaborate with trusted specialists when needed.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question"><span>04 / FAQ</span>Who do you usually work with?<img alt="" aria-hidden="true" class="faq-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/faq4.webp" width="500"/></summary>
+<div class="faq-answer">Thoughtful brands, founders, researchers, creatives, startups, small teams, mission-driven businesses, and agencies that need sharp thinking and clear words. Basically: people with good ideas who do not want those ideas flattened into generic marketing paste.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question"><span>05 / FAQ</span>How does a project usually work?<img alt="" aria-hidden="true" class="faq-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/faq5.webp" width="500"/></summary>
+<div class="faq-answer">I start with a discovery call, then define the scope, deliverables, timeline, and working process. From there, I usually move through strategy, messaging, creation, feedback, and final delivery. Simple enough to follow. Structured enough to avoid chaos goblin mode.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question"><span>06 / FAQ</span>Do you offer ongoing support?<img alt="" aria-hidden="true" class="faq-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/faq6.webp" width="500"/></summary>
+<div class="faq-answer">Yes. Ongoing support is available for content, social media, campaigns, messaging, editorial planning, and general communication support. This can be direct client work or support for another studio, agency, or internal team.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question"><span>07 / FAQ</span>Do you only work with clients in one country?<img alt="" aria-hidden="true" class="faq-icon" decoding="async" height="500" loading="lazy" src="assets/optimized/faq7.webp" width="500"/></summary>
+<div class="faq-answer">No. I work internationally. I am often moving between places and time zones, but the process stays clear. Calls, timelines, and communication are agreed upfront so nobody has to guess where anything stands.</div>
+</details>
+</div>
+</div>
+</section>
+<section class="final-cta" id="contact">
+<div class="wrap cta-banner">
+<div class="cta-content">
+<span class="black-label">Let's find the good bit.</span>
+<h2>Got something <span class="marker" data-stroke="b">worth saying?</span></h2>
+<p>Tell me what you’re working on. I’ll help you find a useful starting point.</p>
+<a class="btn btn-paper" href="mailto:cam@thegoodbit.studio?subject=Let%E2%80%99s%20find%20the%20good%20bit">Email me ↗</a>
+</div>
+<img alt="" aria-hidden="true" class="cta-plane-img" decoding="async" height="500" loading="lazy" src="assets/optimized/4.webp" width="500"/>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap footer-grid">
+<div class="footer-brand">
+<a class="footer-brand-link" href="#home">
+<img alt="The Good Bit" class="footer-logo-img" decoding="async" height="78" loading="lazy" src="assets/optimized/goodbitmore.webp" width="500"/>
+</a>
+<p class="eyebrow">A small digital marketing studio</p>
+<p>I help people with good ideas find the point, sharpen the message, and say it like they mean it.</p>
+<p class="signature">Find the good bit. Say it well.</p>
+</div>
+<div>
+<h3>Navigate</h3>
+<a href="#work">Work</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#process">Process</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Let's talk</a>
+</div>
+<div>
+<h3>Services</h3>
+<a href="#services">Strategy</a>
+<a href="#services">Copywriting</a>
+<a href="#services">Content</a>
+<a href="#services">Social Media</a>
+<a href="#services">Brand Voice</a>
+<a href="#services">Creative Direction</a>
+</div>
+<div>
+<h3>Contact</h3>
+<a href="mailto:cam@thegoodbit.studio">cam@thegoodbit.studio</a>
+<p>Worldwide</p>
+<a class="footer-cta" href="#contact">Let’s talk ↗</a>
+</div>
 
-    <div class="marquee-strip" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Strategy</span><span class="marquee-star">✹</span>
-        <span>Copywriting</span><span class="marquee-star">✹</span>
-        <span>Content</span><span class="marquee-star">✹</span>
-        <span>Social Media</span><span class="marquee-star">✹</span>
-        <span>Brand Voice</span><span class="marquee-star">✹</span>
-        <span>Clear Messaging</span><span class="marquee-star">✹</span>
-        <span>Creative Direction</span><span class="marquee-star">✹</span>
-        <span>The Good Bit</span><span class="marquee-star">✹</span>
-        <span>Strategy</span><span class="marquee-star">✹</span>
-        <span>Copywriting</span><span class="marquee-star">✹</span>
-        <span>Content</span><span class="marquee-star">✹</span>
-        <span>Social Media</span><span class="marquee-star">✹</span>
-        <span>Brand Voice</span><span class="marquee-star">✹</span>
-        <span>Clear Messaging</span><span class="marquee-star">✹</span>
-        <span>Creative Direction</span><span class="marquee-star">✹</span>
-        <span>The Good Bit</span><span class="marquee-star">✹</span>
-      </div>
-    </div>
-
-    <section class="promise section">
-      <div class="wrap promise-board">
-        <div class="promise-main">
-          <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">Our promise</p>
-          <h2>Clear beats <span class="marker" data-stroke="b">clever.</span></h2>
-          <p>Most brands do not need more noise. They need a clearer point.</p>
-          <p>The Good Bit helps you find the strongest part of what you are trying to say, then build around it with strategy, copy, content, and creative direction that feels useful, human, and true to you.</p>
-          <div class="promise-collage">
-            <div class="paper-note small">Good ideas.<br>No fluff. <img src="logo.png" alt="" class="note-star" aria-hidden="true"></div>
-          </div>
-        </div>
-        <div class="promise-cards">
-          <article class="dark-card">
-            <span class="card-icon icon-pink">✹</span>
-            <h3>Clarity first</h3>
-            <p>We cut the noise until the point is obvious.</p>
-            <svg class="promise-doodle promise-doodle-1 doodle-svg" aria-hidden="true" viewBox="0 0 52 40" fill="none">
-              <path class="doodle-path" d="M8,32 C12,8 36,6 38,18 C40,30 28,37 22,28 C16,20 26,10 35,16" stroke="#f2387b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </article>
-          <article class="dark-card">
-            <span class="card-icon icon-pink">☺</span>
-            <h3>Human &amp; smart</h3>
-            <p>Strategy with a brain. Copy with a pulse.</p>
-            <svg class="promise-doodle promise-doodle-2" aria-hidden="true" viewBox="0 0 70 70">
-              <path d="M35,4 L40,26 L58,14 L46,31 L68,35 L46,39 L58,56 L40,44 L35,66 L30,44 L12,56 L24,39 L2,35 L24,31 L12,14 L30,26 Z" fill="#c4d0ff"/>
-            </svg>
-          </article>
-          <article class="dark-card">
-            <span class="card-icon icon-blue">〜</span>
-            <h3>Slow on purpose</h3>
-            <p>No panic posting. No content treadmill.</p>
-            <svg class="promise-doodle promise-doodle-3" aria-hidden="true" viewBox="0 0 66 22" fill="none">
-              <path d="M5,16 C20,6 44,16 61,9" stroke="#f2387b" stroke-width="9" stroke-linecap="round" opacity="0.32"/>
-            </svg>
-          </article>
-          <article class="dark-card">
-            <span class="card-icon icon-yellow">✦</span>
-            <h3>Built to last</h3>
-            <p>Work that still makes sense six months from now.</p>
-            <div class="promise-stamp" aria-hidden="true">NOT JUST<br>A MOMENT</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="services section" id="services">
-      <div class="wrap">
-        <div class="section-head services-head">
-          <div>
-            <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">What we do</p>
-            <h2>Strategy, content, and creative <span class="marker" data-stroke="c">with a point.</span></h2>
-            <p>The Good Bit works where ideas meet effective communication. That might mean sharpening your positioning, finding your brand voice, writing content, planning a social presence, shaping a campaign, or helping your team explain complex work without sounding boring (you can't afford that in this economy). The offer is simple: clearer thinking, stronger direction, and communication that knows what it is trying to do.</p>
-          </div>
-          <div class="head-art">
-            <img src="logo.png" alt="" class="burst" aria-hidden="true">
-            <div class="sticky-note">Human<br>Smart<br>Creative</div>
-          </div>
-        </div>
-        <div class="service-grid">
-          <article class="service-tile tint-pink">
-            <div>
-              <p class="tile-kicker">01 / Strategy</p>
-              <h3>Strategy &amp; positioning</h3>
-              <p>Get clear on who you are, what you stand for, and why anyone should care. (The fun bit, honestly.)</p>
-              <a href="#work" class="text-link">See my work <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-            </div>
-            <img src="7.png" alt="" class="service-tile-img service-tile-img-m" aria-hidden="true">
-          </article>
-          <article class="service-tile tint-blue">
-            <div>
-              <p class="tile-kicker blue">02 / Copywriting</p>
-              <h3>Copywriting &amp; content</h3>
-              <p>Words that do something. Stories that stick. Ideas that don't read like they were written by a content calendar.</p>
-              <a href="#work" class="text-link">See my work <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-            </div>
-            <img src="10.png" alt="" class="service-tile-img" aria-hidden="true">
-          </article>
-          <article class="service-tile tint-yellow">
-            <div>
-              <p class="tile-kicker yellow">03 / Web Design</p>
-              <h3>Digital &amp; design</h3>
-              <p>Websites and digital experiences built to be useful first, beautiful second — and usually both.</p>
-              <a href="#work" class="text-link">See my work <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-            </div>
-            <img src="5.png" alt="" class="service-tile-img" aria-hidden="true">
-          </article>
-          <article class="service-tile tint-lilac">
-            <div>
-              <p class="tile-kicker purple">04 / Social Media</p>
-              <h3>Social &amp; creative</h3>
-              <p>Content that builds something over time. Less viral moment, more lasting presence.</p>
-              <a href="#work" class="text-link">See my work <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-            </div>
-            <img src="8.png" alt="" class="service-tile-img" aria-hidden="true">
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="process section" id="process">
-      <div class="wrap process-board">
-        <div class="process-intro">
-          <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">Process</p>
-          <h2>From &#8220;I think I know what I mean&#8221; to <span class="marker" data-stroke="b">&#8220;that&#8217;s exactly it.&#8221;</span></h2>
-          <p>Good communication usually starts before the writing. It starts with figuring out what you actually do, who it is for, why it matters, and what people need to understand before they care. That is the work. The words come after.</p>
-        </div>
-        <div class="process-lower">
-          <div class="step-row process-flow">
-            <svg class="process-line" viewBox="0 0 700 120" aria-hidden="true" preserveAspectRatio="none">
-              <path d="M20 60 C160 20 230 96 350 60 S540 20 680 60" />
-            </svg>
-            <article class="step-card">
-              <span>01</span>
-              <h3>Discover</h3>
-              <p>We ask the useful questions. Sometimes annoying ones. What are you really trying to say? What is getting buried? What does your audience already understand — and what do they keep missing?</p>
-              <small>This part takes longer than people expect. That's the point.</small>
-            </article>
-            <img src="arrow.png" alt="" class="step-arrow" aria-hidden="true">
-            <article class="step-card">
-              <span>02</span>
-              <h3>Shape the message</h3>
-              <p>Strategy, messaging, copy, content, creative direction — whatever shape the project needs. Built around the good bit: the idea at the center of your work that everything else grows from.</p>
-              <small>Ideas with direction.</small>
-            </article>
-            <img src="arrow.png" alt="" class="step-arrow" aria-hidden="true">
-            <article class="step-card">
-              <span>03</span>
-              <h3>Deliver</h3>
-              <p>We refine it until it feels right. The goal is not to make you sound bigger, louder, or more polished than you are. The goal is to make you sound clear, credible, and unmistakably yourself.</p>
-              <small>Built to make impact.</small>
-            </article>
-          </div>
-          <div class="process-sticker-wrap">
-            <img src="9.png" alt="" class="process-sticker" aria-hidden="true">
-          </div>
-        </div>
-        <div class="mini-cta">
-          <img src="logo.png" alt="" class="star" aria-hidden="true">
-          <strong>Let's make something <span class="marker small-marker">good.</span></strong>
-          <a href="#contact" class="btn btn-pink">Start a discovery call <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="pricing section" id="pricing">
-      <div class="wrap">
-        <div class="pricing-head">
-          <div>
-            <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">Ways to work together</p>
-            <h2>Simple ways to <span class="marker" data-stroke="c">start.</span></h2>
-            <p>Every project has a different shape, but the starting point is usually one of three things: you need clarity, you need content, or you need ongoing support. I keep scopes clear, deliverables useful, and timelines realistic. No strange asterisks. No surprise fees.</p>
-            <p>Not sure what you need yet? That is normal. That is what the discovery call is for.</p>
-          </div>
-          <div class="paper-note large-note">Not sure where to start?<br><span>Let's figure it out together.</span><a href="#contact">Book a call <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a></div>
-        </div>
-        <div class="price-grid">
-          <article class="price-card">
-            <h3>Starter</h3>
-            <p>For a specific thing you need to get right. A strategy session, a content plan, two core deliverables. Good for testing the water.</p>
-            <strong>£1,500</strong>
-            <span>One-off project</span>
-            <ul>
-              <li>Strategy session</li>
-              <li>Content plan</li>
-              <li>2 core deliverables</li>
-              <li>Email support</li>
-            </ul>
-            <a class="btn btn-outline" href="#contact">Get started <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-          </article>
-          <article class="price-card featured">
-            <div class="popular">Most popular</div>
-            <h3>Growth</h3>
-            <p>For brands ready to build consistently. Everything in Starter, plus ongoing content, a landing page or site, and someone who actually picks up the phone.</p>
-            <strong>£3,000</strong>
-            <span>Per month</span>
-            <ul>
-              <li>Everything in Starter</li>
-              <li>Ongoing content</li>
-              <li>Landing page / site</li>
-              <li>Priority support</li>
-            </ul>
-            <a class="btn btn-pink" href="#contact">Book a call →</a>
-          </article>
-          <article class="price-card">
-            <h3>Bespoke</h3>
-            <p>Your situation doesn't fit a package. Fine — neither does ours. Tell us what you're trying to do and we'll figure out the right shape together.</p>
-            <strong>Custom</strong>
-            <span>Tailored to you</span>
-            <ul>
-              <li>Tailored strategy</li>
-              <li>Custom scope</li>
-              <li>Dedicated support</li>
-              <li>Flexible terms</li>
-            </ul>
-            <a class="btn btn-outline" href="#contact">Book a call <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="work section" id="work">
-      <div class="wrap">
-        <div class="work-hero">
-          <div>
-            <p class="eyebrow">Work &amp; Experience <img src="logo.png" alt="" class="mini-star-img" aria-hidden="true"></p>
-            <h2>New studio. <span class="marker" data-stroke="b">Not new here.</span></h2>
-            <p>The Good Bit Studio is new. Cam is not. Before starting the studio, I spent years working across communications, content, SEO, social media, editorial strategy, and digital projects for organizations in science, technology, sustainability, media, culture, and creative industries.</p>
-            <p>Some projects were direct client work. Others were created in collaboration with studios, agencies, freelancers, or wider internal teams. Each work card explains the role clearly, because the details matter.</p>
-          </div>
-          <div class="work-collage">
-            <div class="paper-note">Human &amp;<br>smart ideas.<br>Real results.</div>
-            <img src="logo.png" alt="" class="burst" aria-hidden="true">
-          </div>
-        </div>
-        <div class="trusted">
-          <p><span class="icon-pink">♥</span> Trusted by</p>
-          <span>CGIAR</span>
-          <span>CERN</span>
-          <span>SONY</span>
-          <span>PICO XR</span>
-          <a href="#contact">+ more good bits <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true" style="transform:rotate(-45deg);"></a>
-        </div>
-        <div class="case-carousel-wrap">
-          <div class="case-carousel" id="caseCarousel">
-
-            <article class="case-card case-cgiar">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-cgiar"><img src="CGIAR.png" alt="CGIAR Genebank Platform" class="case-img"></div>
-                  <div class="case-body">
-                    <span class="case-tag">Digital platform</span>
-                    <h3>CGIAR<br>Genebank Platform</h3>
-                    <p>A unified digital platform improving access to crop data for food security worldwide.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">Digital platform</span>
-                    <h3>CGIAR Genebank Platform</h3>
-                    <p>11 genebanks. 650,000+ crop samples. One unified story. We built the digital strategy, IA, and editorial voice for the world's largest crop diversity network.</p>
-                    <ul class="case-deliverables">
-                      <li>Website redesign</li>
-                      <li>Content strategy</li>
-                      <li>UX architecture</li>
-                      <li>Editorial guidelines</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card case-cern">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-cern"><img src="CERN.png" alt="CERN Idea Square" class="case-img"></div>
-                  <div class="case-body">
-                    <span class="case-tag">Brand &amp; campaign</span>
-                    <h3>CERN<br>Idea Square</h3>
-                    <p>A global campaign making particle physics curious, clear, and seriously cool.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">Brand &amp; campaign</span>
-                    <h3>CERN Idea Square</h3>
-                    <p>Particle physics is one of science's best stories — it just needed a better narrator. We built the campaign strategy, brand narrative, and social content for CERN's innovation hub.</p>
-                    <ul class="case-deliverables">
-                      <li>Campaign strategy</li>
-                      <li>Brand identity</li>
-                      <li>Social content</li>
-                      <li>Event materials</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card case-sony">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-sony"><img src="Sony.png" alt="Sony Creators Cloud" class="case-img"></div>
-                  <div class="case-body">
-                    <span class="case-tag">Product experience</span>
-                    <h3>Sony<br>Creators&#8217; Cloud</h3>
-                    <p>A content management platform built for creators, by creators.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">Product experience</span>
-                    <h3>Sony Creators&#8217; Cloud</h3>
-                    <p>Professional creatives needed more than software — they needed a platform that spoke their language. We wrote the product story, onboarding, and editorial voice end-to-end.</p>
-                    <ul class="case-deliverables">
-                      <li>UX copywriting</li>
-                      <li>Onboarding content</li>
-                      <li>Product messaging</li>
-                      <li>Help documentation</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card case-pico">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-pico"><img src="PICO%20XR.png" alt="PICO XR Global Brand Launch" class="case-img"></div>
-                  <div class="case-body">
-                    <span class="case-tag">XR &amp; immersive</span>
-                    <h3>PICO XR<br>Global Brand Launch</h3>
-                    <p>Positioning and campaign for the next era of immersive exploration.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">XR &amp; immersive</span>
-                    <h3>PICO XR Global Launch</h3>
-                    <p>Entering immersive XR markets is hard. We built the positioning, campaign narrative, and brand voice for PICO's global consumer launch into Western markets.</p>
-                    <ul class="case-deliverables">
-                      <li>Brand positioning</li>
-                      <li>Launch strategy</li>
-                      <li>Campaign copy</li>
-                      <li>Social media</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card case-babbo">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-bloom"><img src="BABBO%20Foods.png" alt="BABBO Foods" class="case-img"></div>
-                  <div class="case-body">
-                    <span class="case-tag">Brand &amp; social</span>
-                    <h3>BABBO<br>Foods</h3>
-                    <p>Brand story and social content for an artisan Italian food brand with something real to say.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">Brand &amp; social</span>
-                    <h3>BABBO Foods</h3>
-                    <p>Real ingredients, real story. We built BABBO's brand voice, social content, and campaign platform around what genuinely makes them good — Tuscany, craft, and no compromise.</p>
-                    <ul class="case-deliverables">
-                      <li>Brand strategy</li>
-                      <li>Social content</li>
-                      <li>Campaign copy</li>
-                      <li>Packaging voice</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card case-curb">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-meridian"><img src="CURB.png" alt="Curb Taxi" class="case-img"></div>
-                  <div class="case-body">
-                    <span class="case-tag">DOOH &amp; Social</span>
-                    <h3>Curb Taxi<br>DOOH Content</h3>
-                    <p>Punchy street-level visuals and social-first creative for a moving brand.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">DOOH &amp; Social</span>
-                    <h3>Curb Taxi DOOH</h3>
-                    <p>Street-level content that stops people mid-commute. We built the DOOH display content and social creative for Curb&#8217;s urban presence — visuals that move, literally.</p>
-                    <ul class="case-deliverables">
-                      <li>DOOH content</li>
-                      <li>Social creative</li>
-                      <li>Campaign copy</li>
-                      <li>Art direction</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card case-orbit">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-orbit"></div>
-                  <div class="case-body">
-                    <span class="case-tag">Digital &amp; design</span>
-                    <h3>Orbit<br>Labs</h3>
-                    <p>A product website built to convert curious visitors into loyal users.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">Digital &amp; design</span>
-                    <h3>Orbit Labs</h3>
-                    <p>A deep-tech startup that needed to talk to humans. We designed and wrote their product site — clear, confident, and impossible to misunderstand.</p>
-                    <ul class="case-deliverables">
-                      <li>Web design</li>
-                      <li>UX writing</li>
-                      <li>Conversion copy</li>
-                      <li>Launch assets</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card case-kin">
-              <div class="case-card-inner">
-                <div class="case-card-front">
-                  <div class="case-img-area ci-kin"></div>
-                  <div class="case-body">
-                    <span class="case-tag">Social &amp; creative</span>
-                    <h3>Kin &amp;<br>Kind</h3>
-                    <p>A year-round social presence built around community, not content for content&#8217;s sake.</p>
-                  </div>
-                  <span class="case-flip-hint">More info ↗</span>
-                </div>
-                <div class="case-card-back">
-                  <div class="case-back-inner">
-                    <span class="case-tag">Social &amp; creative</span>
-                    <h3>Kin &amp; Kind</h3>
-                    <p>A sustainable brand with an audience that cared deeply — but a social presence that didn't match. We built a year of content that felt like them, not the algorithm.</p>
-                    <ul class="case-deliverables">
-                      <li>Social strategy</li>
-                      <li>Content pillars</li>
-                      <li>Creative direction</li>
-                      <li>Monthly content</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-pink">Work with me ↗</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-          </div>
-          <div class="carousel-nav">
-            <button class="carousel-btn" id="casePrev" aria-label="Previous projects"><img src="arrow.png" class="btn-arrow-img btn-arrow-flipped" alt=""></button>
-            <button class="carousel-btn" id="caseNext" aria-label="Next projects"><img src="arrow.png" class="btn-arrow-img" alt=""></button>
-          </div>
-        </div>
-        <a class="btn btn-pink centered" href="#contact">See more of our work <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="about section" id="about">
-      <div class="wrap">
-        <div class="about-grid">
-          <div>
-            <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">About The Good Bit</p>
-            <h2>Hi, I'm <span class="marker">Cam.</span></h2>
-            <p>I started The Good Bit because most communication problems are <em>actually</em> clarity problems.</p>
-            <p>When you're clear on who you are, what you stand for, and what you want to say, saying it well becomes a lot easier. That's where I come in: finding the good bit. The idea at the center of your work that has a pulse, and is genuinely worth sharing.</p>
-            <p>I'm an interdisciplinary creative with a background across writing, strategy, photography, music, and digital communication. From there, I help shape everything else: brand voice, messaging, content, and digital presence — not by being louder, but by being clearer.</p>
-            <div class="actions">
-              <a href="#contact" class="btn btn-pink">Let's make something good. <span aria-hidden="true">→</span></a>
-              <a href="#work" class="btn btn-outline">See my work <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-            </div>
-          </div>
-          <figure class="portrait-collage">
-            <img src="That'sMeOk.png" alt="Cam, founder of The Good Bit" class="portrait-img">
-            <div class="paper-note about-note">that's me!</div>
-          </figure>
-        </div>
-        <div class="quick-facts">
-          <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">Quick facts</p>
-          <div class="fact-pills">
-            <span class="fact-pill">🌐 EN / IT / FR / ES / NL</span>
-            <span class="fact-pill">📍 USA / Italy / France / Netherlands</span>
-            <span class="fact-pill">🤓 8+ years</span>
-            <span class="fact-pill">🎨 Interdisciplinary creative</span>
-            <span class="fact-pill">🎵 Musician / photographer / writer</span>
-            <span class="fact-pill">🧠 Strategy / content / digital</span>
-          </div>
-        </div>
-
-        <div class="stats-grid">
-          <article>
-            <div class="stat-badge"><img src="smile.png" alt="" class="stat-icon"></div>
-            <strong>8+</strong>
-            <span class="stats-label">Years</span>
-            <hr class="stats-divider">
-            <p>Helping bold ideas find their voice.</p>
-          </article>
-          <article>
-            <div class="stat-badge"><img src="star.png" alt="" class="stat-icon"></div>
-            <strong>50+</strong>
-            <span class="stats-label">Projects</span>
-            <hr class="stats-divider">
-            <p>Delivered across startups, scaleups, and global teams.</p>
-          </article>
-          <article>
-            <div class="stat-badge"><img src="logo.png" alt="" class="stat-icon"></div>
-            <strong>5</strong>
-            <span class="stats-label">Languages</span>
-            <hr class="stats-divider">
-            <p>English, Italian, French, Spanish, Dutch.</p>
-          </article>
-          <article>
-            <div class="stat-badge"><img src="heart.png" alt="" class="stat-icon"></div>
-            <strong>100%</strong>
-            <span class="stats-label">Human</span>
-            <hr class="stats-divider">
-            <p>Strategy-led, creativity-driven, always people-first.</p>
-          </article>
-        </div>
-        <div class="kind-words">
-          <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">Kind words</p>
-          <div class="quote-grid" id="quoteCarousel">
-            <article class="quote-card">
-              <span>"</span>
-              <p>Cam gets it. Fast. The work is smart, strategic, and actually sounds like us: just better.</p>
-              <strong>Maya Lee</strong>
-              <small>Founder, ClearPeak</small>
-            </article>
-            <article class="quote-card">
-              <span>"</span>
-              <p>Working with Cam is like having a creative partner who's equal parts brain and gut.</p>
-              <strong>Jordan Pierce</strong>
-              <small>COO, Tally</small>
-            </article>
-            <article class="quote-card">
-              <span>"</span>
-              <p>From positioning to copy to campaigns, The Good Bit helped us grow with clarity and voice.</p>
-              <strong>Riley Chen</strong>
-              <small>Head of Growth, Loop</small>
-            </article>
-          </div>
-          <div class="carousel-nav quote-carousel-nav">
-            <button class="carousel-btn" id="quotePrev" aria-label="Previous review"><img src="arrow.png" class="btn-arrow-img btn-arrow-flipped" alt=""></button>
-            <button class="carousel-btn" id="quoteNext" aria-label="Next review"><img src="arrow.png" class="btn-arrow-img" alt=""></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq section" id="faq">
-      <div class="wrap faq-grid">
-        <div>
-          <p class="eyebrow"><img src="logo.png" alt="" class="mini-star-img" aria-hidden="true">FAQ</p>
-          <h2>Things you might be <span class="marker" data-stroke="c">wondering.</span></h2>
-          <p>Straight answers. No fog machine.</p>
-          <div class="faq-doodle">✈︎<span>Curious minds welcome.</span></div>
-        </div>
-        <div class="faq-list">
-          <article class="faq-item">
-            <button class="faq-question"><span>01 / FAQ</span>Is The Good Bit just you?<img src="faq1.png" alt="" class="faq-icon" aria-hidden="true"></button>
-            <div class="faq-answer">Mostly, yes. The Good Bit is a solo-led studio run by Cam. I lead the strategy, messaging, writing, and creative direction myself, so clients work directly with the person thinking through the work. For bigger or more specialized projects, I bring in trusted freelancers, studios, agencies, or creative collaborators.</div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question"><span>02 / FAQ</span>Do you work with agencies and other studios?<img src="faq2.png" alt="" class="faq-icon" aria-hidden="true"></button>
-            <div class="faq-answer">Yes. I work directly with clients, and I also collaborate with agencies, studios, and creative teams that need support with strategy, copywriting, messaging, content, editorial work, or social media. Some projects are led by The Good Bit. Others are collaborations or specialist contributions inside a wider team. Either way, the role is always clear.</div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question"><span>03 / FAQ</span>What kind of work do you do?<img src="faq3.png" alt="" class="faq-icon" aria-hidden="true"></button>
-            <div class="faq-answer">Strategy, messaging, copywriting, content, social media, editorial planning, campaign ideas, brand voice, and creative direction. I can also support web presence and landing page projects, especially around messaging, structure, copy, and creative direction. For design and development, I collaborate with trusted specialists when needed.</div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question"><span>04 / FAQ</span>Who do you usually work with?<img src="faq4.png" alt="" class="faq-icon" aria-hidden="true"></button>
-            <div class="faq-answer">Thoughtful brands, founders, researchers, creatives, startups, small teams, mission-driven businesses, and agencies that need sharp thinking and clear words. Basically: people with good ideas who do not want those ideas flattened into generic marketing paste.</div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question"><span>05 / FAQ</span>How does a project usually work?<img src="faq5.png" alt="" class="faq-icon" aria-hidden="true"></button>
-            <div class="faq-answer">We start with a discovery call, then define the scope, deliverables, timeline, and working process. From there, we usually move through strategy, messaging, creation, feedback, and final delivery. Simple enough to follow. Structured enough to avoid chaos goblin mode.</div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question"><span>06 / FAQ</span>Do you offer ongoing support?<img src="faq6.png" alt="" class="faq-icon" aria-hidden="true"></button>
-            <div class="faq-answer">Yes. Ongoing support is available for content, social media, campaigns, messaging, editorial planning, and general communication support. This can be direct client work or support for another studio, agency, or internal team.</div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question"><span>07 / FAQ</span>Do you only work with clients in one country?<img src="faq7.png" alt="" class="faq-icon" aria-hidden="true"></button>
-            <div class="faq-answer">No. The Good Bit works internationally. I am often moving between places and time zones, but the process stays clear. Calls, timelines, and communication are agreed upfront so nobody has to guess where anything stands.</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta" id="contact">
-      <div class="wrap cta-banner">
-        <div class="cta-content">
-          <span class="black-label">Let's find the good bit.</span>
-          <h2>Got something <span class="marker" data-stroke="b">worth saying?</span></h2>
-          <p>Let's make it clearer, sharper, and easier to share. Book a discovery call and we'll figure out where to start.</p>
-          <a class="btn btn-paper" href="mailto:cam@thegoodbit.studio">Book a discovery call <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-        </div>
-        <img src="4.png" alt="" class="cta-plane-img" aria-hidden="true">
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-grid">
-      <div class="footer-brand">
-        <a href="#home" class="footer-brand-link">
-          <img src="goodbitmore.png" alt="The Good Bit" class="footer-logo-img">
-        </a>
-        <p class="eyebrow">Solo-led creative marketing studio</p>
-        <p>The Good Bit Studio helps thoughtful brands, founders, creatives, researchers, and small teams find the point, sharpen the message, and say things like they mean them.</p>
-        <p class="signature">Find the good bit. Say it well.</p>
-      </div>
-      <div>
-        <h3>Navigate</h3>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#process">Process</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Let's talk</a>
-      </div>
-      <div>
-        <h3>Services</h3>
-        <a href="#services">Strategy</a>
-        <a href="#services">Copywriting</a>
-        <a href="#services">Content</a>
-        <a href="#services">Social Media</a>
-        <a href="#services">Brand Voice</a>
-        <a href="#services">Creative Direction</a>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <a href="mailto:cam@thegoodbit.studio">cam@thegoodbit.studio</a>
-        <p>Worldwide</p>
-        <a class="footer-cta" href="#contact">Book a discovery call <img src="arrow.png" class="arrow-img" alt="" aria-hidden="true"></a>
-      </div>
-      <div>
-        <h3>Follow</h3>
-        <div class="socials">
-          <a href="#" aria-label="Instagram">◎</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Upwork">Up</a>
-        </div>
-        <div class="stamp">Find the good bit.<br><span>Say it well.</span></div>
-      </div>
-    </div>
-    <div class="wrap legal">
-      <span>© The Good Bit Studio. All rights reserved.</span>
-      <span>Privacy Policy / Terms &amp; Conditions / Cookies</span>
-      <span>Designed and developed by Cam</span>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="script.js?v=all-fixes-21jun"></script>
+</div>
+<div class="wrap legal">
+<span>© The Good Bit Studio. All rights reserved.</span>
+<span>Designed and developed by Cam</span>
+</div>
+</footer>
+<script defer="" src="script.js"></script>
 </body>
 </html>
