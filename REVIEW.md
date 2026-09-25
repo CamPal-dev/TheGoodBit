@@ -1,25 +1,22 @@
-# Website refinement preview
+# Reference-led preview
 
-The current version restores the original colours, pink background, collage details, cards, and section order following Cam’s feedback. The earlier editorial redesign is superseded.
+The latest preview follows Cam’s supplied visual reference using the existing artwork. The hero reuses the megaphone and star already present in the repository. Every existing image source and every non-empty body text node is retained, verified against the previous version.
 
-The hero retains the concise first-person introduction and centred composition, with heavy sans-serif headings and the original marker treatment. `styles.css` is restored from the original site; `refinements.css` contains the focused changes so they can be reviewed separately.
+`reference.css` is the active standalone stylesheet. The older stylesheets are retained for comparison but are not loaded. Navigation, project-card controls and FAQs retain their JavaScript interactions; the old scroll-reveal library has been removed so content is immediately visible.
 
-## Retained fixes
+The visual changes include a split hero with handwritten emphasis, full-width dark service and work sections, pink pricing and statistics bands, cream supporting sections and rounded navigation. Existing additional content is retained, so the page is longer than the visual reference. No client names, prices, statistics or copy from the reference were introduced.
 
-- First-person studio copy and a clear small digital marketing studio description.
-- Optimized artwork where compatible with the original layout; original logos retained for their existing CSS cropping.
-- Keyboard-operable project flip controls, FAQ expanded states, and Escape to close the mobile menu.
-- No automatic testimonial scrolling; reduced-motion support.
-- Honest email contact labels; empty social and legal links omitted.
+## Local preview
 
-## Preview
+Run `python3 -m http.server 8765 --bind 127.0.0.1` and visit http://127.0.0.1:8765/.
 
-Run `python3 -m http.server 8765 --bind 127.0.0.1` and open http://127.0.0.1:8765/.
+The previous personality version is saved locally at `.review/personality.html`. Local screenshots and review snapshots are excluded from Git. Nothing is deployed.
 
-Local visual milestones under `.review/` preserve the previous designs for comparison. They are excluded from Git. Nothing has been published.
+## Validation
 
-## Still to confirm
+- Exact body text-node comparison against the previous version.
+- All existing image sources retained.
+- Browser checks at 320, 390, 768 and 1440 pixels: horizontal overflow, FAQ state, project controls and Escape, mobile navigation, and JavaScript errors.
+- Desktop and mobile visual inspection.
 
-Project descriptions and contributions, testimonials, pricing and deliverables, experience statistics, social profile URLs, any booking-calendar URL, and any real policy-page URLs remain subject to Cam’s confirmation.
-
-The original stylesheet still contains overlapping rules. Further cleanup should preserve its rendered appearance and proceed component by component, rather than replacing the design system.
+Previously flagged project claims, testimonials, pricing, profile URLs and policy destinations still need the owner’s confirmation before publication.
