@@ -123,12 +123,9 @@ if(mobileMenu) {
   });
 }
 
-// Feedback: seamless auto-scroll, native swipe/scroll and manual controls.
+// Feedback: auto-scroll pauses on hover/focus; native touch, wheel and keyboard scrolling remain available.
 const quoteCarousel = document.getElementById('quoteCarousel');
 if (quoteCarousel) {
-  const previous = document.getElementById('quotePrev');
-  const next = document.getElementById('quoteNext');
-  const playback = document.getElementById('quotePlayback');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const originals = [...quoteCarousel.children];
   // Duplicate visual cards only; assistive technology reads each review once.
@@ -139,21 +136,12 @@ if (quoteCarousel) {
     copy.dataset.clone = 'true';
     quoteCarousel.append(copy);
   });
-  let paused = false;
   let hovered = false;
   let focused = false;
   let visible = false;
   let holdUntil = 0;
   let previousTime = 0;
   const loopWidth = () => quoteCarousel.children[originals.length].offsetLeft - originals[0].offsetLeft;
-  function updatePlayback() {
-    playback.disabled = reducedMotion.matches;
-    playback.textContent = reducedMotion.matches ? 'Auto-scroll off' : paused ? 'Play scrolling' : 'Pause scrolling';
-    playback.setAttribute('aria-pressed', String(paused));
-  }
-  playback.addEventListener('click', () => { paused = !paused; updatePlayback(); });
-  reducedMotion.addEventListener('change', updatePlayback);
-  updatePlayback();
   const hold = () => { holdUntil = performance.now() + 5000; };
   quoteCarousel.addEventListener('pointerenter', () => { hovered = true; });
   quoteCarousel.addEventListener('pointerleave', () => { hovered = false; });
@@ -162,21 +150,13 @@ if (quoteCarousel) {
   quoteCarousel.addEventListener('keydown', hold);
   quoteCarousel.addEventListener('focusin', () => { focused = true; });
   quoteCarousel.addEventListener('focusout', event => { focused = quoteCarousel.contains(event.relatedTarget); });
-  function move(direction) {
-    hold();
-    const width = loopWidth();
-    if (direction < 0 && quoteCarousel.scrollLeft < 2) quoteCarousel.scrollLeft = width;
-    quoteCarousel.scrollBy({left: direction * (originals[0].offsetWidth + parseFloat(getComputedStyle(quoteCarousel).gap)), behavior: reducedMotion.matches ? 'instant' : 'smooth'});
-  }
-  previous.addEventListener('click', () => move(-1));
-  next.addEventListener('click', () => move(1));
   new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }).observe(quoteCarousel);
   let position = 0;
   function tick(time) {
     const elapsed = Math.min(time - previousTime, 50);
     previousTime = time;
     const width = loopWidth();
-    if (visible && !document.hidden && !paused && !hovered && !focused && !reducedMotion.matches && time > holdUntil) {
+    if (visible && !document.hidden && !hovered && !focused && !reducedMotion.matches && time > holdUntil) {
       if (Math.abs(position - quoteCarousel.scrollLeft) > 2) position = quoteCarousel.scrollLeft;
       position += elapsed * 0.028;
       if (width > 0 && position >= width) position -= width;

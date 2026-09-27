@@ -28,3 +28,19 @@ Applied the 21 browser notes: removed the trust strip, marquee, mini-service sec
 Feedback now contains the existing three reviews plus six explicitly labelled placeholder cards, each with a replaceable photo slot. The rail auto-scrolls when visible, offers previous/next and pause controls, pauses on hover/focus and manual interaction, and disables automatic motion for reduced-motion preferences. Duplicate visual cards are hidden from assistive technology.
 
 Additional checks cover autoplay, pause, manual navigation and wrapping, reduced-motion changes, FAQ animation completion, identical eyebrow sizes, removed content, and process-arrow separation at 320/390/768/1041/1440px. Copy outside the specifically requested edits remains unchanged.
+
+## Second browser-comment batch (11 notes)
+
+1. Removed the feedback pause button; hover, focus and touch interaction pause automatic movement.
+2. Centred the navigation star beside the wordmark and added rotation.
+3. Removed decorative arrows from action buttons; kept functional project-carousel direction controls.
+4. Added soft fading masks at the feedback rail edges.
+5. Removed feedback previous/next buttons; native swipe, trackpad and keyboard scrolling remain.
+6. Moved “that's me!” to the opposite side with the existing hand-drawn arrow image.
+7. Aligned quick-fact pills in a responsive, evenly sized grid.
+8. Reduced service-card height and reserved space for artwork above the titles.
+9. Removed “That's the point.” from the first process note.
+10. Added rotation to the work-section star.
+11. Moved the existing process sticker into the FAQ image area.
+
+Validated auto-scroll, hover/focus pause, reduced motion, image placement, removed controls, button arrows and five viewport widths. The preview remains at the existing URL rather than opening a new versioned tab.
