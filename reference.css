@@ -141,3 +141,18 @@
 .service-tile-img{position:absolute;top:12px;right:16px;width:58px;height:52px;margin:0}
 .service-tile .tile-kicker{min-height:42px;margin-bottom:8px;max-width:calc(100% - 65px)}
 @media(max-width:480px){.service-tile-img{right:12px;width:48px;height:48px}.service-tile .tile-kicker{min-height:42px;margin-bottom:8px;max-width:calc(100% - 53px)}}
+
+/* Mobile navigation floats above the page; its backdrop fades into the content. */
+@media(max-width:760px){
+  .navbar{position:fixed;padding-bottom:20px;pointer-events:none;isolation:isolate}
+  .navbar::before{content:"";position:absolute;inset:0 0 -14px;z-index:-1;background:linear-gradient(to bottom,rgba(246,241,230,.88),rgba(246,241,230,.5) 65%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);mask-image:linear-gradient(#000 60%,transparent);-webkit-mask-image:linear-gradient(#000 60%,transparent);pointer-events:none}
+  .nav-inner,.mobile-menu{pointer-events:auto;background:rgba(246,241,230,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+  .brand-star{display:none}
+  .star-menu-btn img{animation:eyebrow-turn 12s linear infinite;transform-origin:center}
+  .mobile-menu{max-height:calc(100dvh - 110px);overflow-y:auto}
+  .case-carousel{padding-inline:8px;scroll-padding-inline:8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .case-carousel::-webkit-scrollbar{display:none}
+  .case-card{flex-basis:100%;scroll-snap-align:center;scroll-snap-stop:always}
+  .carousel-nav{justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){.star-menu-btn img{animation:none}}

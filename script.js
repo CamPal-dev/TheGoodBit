@@ -13,7 +13,10 @@ if (navbar) {
 
 function setMenuOpen(isOpen) {
   if (hamburger)   hamburger.setAttribute('aria-expanded', String(isOpen));
-  if (starMenuBtn) starMenuBtn.setAttribute('aria-expanded', String(isOpen));
+  if (starMenuBtn) {
+    starMenuBtn.setAttribute('aria-expanded', String(isOpen));
+    starMenuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+  }
 }
 
 if (mobileMenu) {
