@@ -20,3 +20,11 @@ The previous personality version is saved locally at `.review/personality.html`.
 - Desktop and mobile visual inspection.
 
 Previously flagged project claims, testimonials, pricing, profile URLs and policy destinations still need the owner’s confirmation before publication.
+
+## September 27 annotated review
+
+Applied the 21 browser notes: removed the trust strip, marquee, mini-service section and approach section; updated the quick-facts label and requested CTA text; removed the specified arrows; standardized eyebrow type and added rotating eyebrow stars; reflowed the process cards with separate arrow tracks; matched pricing underline widths; enlarged FAQ questions and icons with a click-pop animation; replaced FAQ supporting copy with an image placeholder; reused FAQ illustrations for the statistics badges.
+
+Feedback now contains the existing three reviews plus six explicitly labelled placeholder cards, each with a replaceable photo slot. The rail auto-scrolls when visible, offers previous/next and pause controls, pauses on hover/focus and manual interaction, and disables automatic motion for reduced-motion preferences. Duplicate visual cards are hidden from assistive technology.
+
+Additional checks cover autoplay, pause, manual navigation and wrapping, reduced-motion changes, FAQ animation completion, identical eyebrow sizes, removed content, and process-arrow separation at 320/390/768/1041/1440px. Copy outside the specifically requested edits remains unchanged.

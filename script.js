@@ -109,29 +109,6 @@ if (caseCarousel && casePrev && caseNext) {
   });
 }
 
-// Quote / testimonial carousel
-const quoteCarousel = document.getElementById('quoteCarousel');
-const quotePrev     = document.getElementById('quotePrev');
-const quoteNext     = document.getElementById('quoteNext');
-
-if (quoteCarousel) {
-  // Mobile arrow buttons
-  if (quotePrev && quoteNext) {
-    const quoteCardWidth = () => {
-      const card = quoteCarousel.querySelector('.quote-card');
-      const gap  = parseFloat(getComputedStyle(quoteCarousel).columnGap) || 14;
-      return card ? card.offsetWidth + gap : 300;
-    };
-    quotePrev.addEventListener('click', () => {
-      quoteCarousel.scrollBy({ left: -quoteCardWidth(), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    });
-    quoteNext.addEventListener('click', () => {
-      quoteCarousel.scrollBy({ left: quoteCardWidth(), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    });
-  }
-
-}
-
 // Close mobile navigation with Escape and keep hidden links out of the tab order.
 function syncMenu() { if(mobileMenu) mobileMenu.inert = !mobileMenu.classList.contains('open'); }
 if(mobileMenu) {
@@ -144,4 +121,70 @@ if(mobileMenu) {
       if(trigger) trigger.focus();
     }
   });
+}
+
+// Feedback: seamless auto-scroll, native swipe/scroll and manual controls.
+const quoteCarousel = document.getElementById('quoteCarousel');
+if (quoteCarousel) {
+  const previous = document.getElementById('quotePrev');
+  const next = document.getElementById('quoteNext');
+  const playback = document.getElementById('quotePlayback');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const originals = [...quoteCarousel.children];
+  // Duplicate visual cards only; assistive technology reads each review once.
+  originals.forEach(card => {
+    const copy = card.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    copy.inert = true;
+    copy.dataset.clone = 'true';
+    quoteCarousel.append(copy);
+  });
+  let paused = false;
+  let hovered = false;
+  let focused = false;
+  let visible = false;
+  let holdUntil = 0;
+  let previousTime = 0;
+  const loopWidth = () => quoteCarousel.children[originals.length].offsetLeft - originals[0].offsetLeft;
+  function updatePlayback() {
+    playback.disabled = reducedMotion.matches;
+    playback.textContent = reducedMotion.matches ? 'Auto-scroll off' : paused ? 'Play scrolling' : 'Pause scrolling';
+    playback.setAttribute('aria-pressed', String(paused));
+  }
+  playback.addEventListener('click', () => { paused = !paused; updatePlayback(); });
+  reducedMotion.addEventListener('change', updatePlayback);
+  updatePlayback();
+  const hold = () => { holdUntil = performance.now() + 5000; };
+  quoteCarousel.addEventListener('pointerenter', () => { hovered = true; });
+  quoteCarousel.addEventListener('pointerleave', () => { hovered = false; });
+  quoteCarousel.addEventListener('pointerdown', hold);
+  quoteCarousel.addEventListener('wheel', hold, {passive: true});
+  quoteCarousel.addEventListener('keydown', hold);
+  quoteCarousel.addEventListener('focusin', () => { focused = true; });
+  quoteCarousel.addEventListener('focusout', event => { focused = quoteCarousel.contains(event.relatedTarget); });
+  function move(direction) {
+    hold();
+    const width = loopWidth();
+    if (direction < 0 && quoteCarousel.scrollLeft < 2) quoteCarousel.scrollLeft = width;
+    quoteCarousel.scrollBy({left: direction * (originals[0].offsetWidth + parseFloat(getComputedStyle(quoteCarousel).gap)), behavior: reducedMotion.matches ? 'instant' : 'smooth'});
+  }
+  previous.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }).observe(quoteCarousel);
+  let position = 0;
+  function tick(time) {
+    const elapsed = Math.min(time - previousTime, 50);
+    previousTime = time;
+    const width = loopWidth();
+    if (visible && !document.hidden && !paused && !hovered && !focused && !reducedMotion.matches && time > holdUntil) {
+      if (Math.abs(position - quoteCarousel.scrollLeft) > 2) position = quoteCarousel.scrollLeft;
+      position += elapsed * 0.028;
+      if (width > 0 && position >= width) position -= width;
+      quoteCarousel.scrollLeft = position;
+    } else {
+      position = quoteCarousel.scrollLeft;
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 }
