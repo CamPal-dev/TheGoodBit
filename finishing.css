@@ -94,7 +94,7 @@ h2,.services-head h2,.process-intro h2{font-size:clamp(2.5rem,3.8vw,3.8rem)}
 @media(max-width:699px){.services .service-tile{padding:24px 0}.service-tile .tile-kicker{max-width:none}}
 
 /* Restore the original animated FAQ illustrations and strengthen the reference details. */
-.faq-question{grid-template-columns:28px minmax(0,1fr) 58px}.faq-question .faq-icon{grid-column:3;grid-row:1;width:54px;height:54px;object-fit:contain}
+.faq-question{grid-template-columns:28px minmax(0,1fr) 58px}.faq-question>span{grid-row:1}.faq-question .faq-icon{grid-column:3;grid-row:1;width:54px;height:54px;object-fit:contain}
 .process-decoration{width:58px;height:58px;top:17px;right:15px;transform:none}.step-card:last-of-type .process-decoration{width:86px;height:86px;top:4px;right:3px}
 .stat-badge{display:flex;align-items:center;justify-content:center}.stat-badge .stat-icon{width:84px;height:84px;max-width:none;flex:none}
 .service-tile-img{width:96px;height:104px;left:0;top:20px}
