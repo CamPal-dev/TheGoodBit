@@ -92,3 +92,16 @@ h2,.services-head h2,.process-intro h2{font-size:clamp(2.5rem,3.8vw,3.8rem)}
 }
 @media(min-width:700px) and (max-width:1099px){.services .service-tile{padding:24px 0 24px 88px}}
 @media(max-width:699px){.services .service-tile{padding:24px 0}.service-tile .tile-kicker{max-width:none}}
+
+/* Restore the original animated FAQ illustrations and strengthen the reference details. */
+.faq-question{grid-template-columns:28px minmax(0,1fr) 58px}.faq-question .faq-icon{grid-column:3;grid-row:1;width:54px;height:54px;object-fit:contain}
+.process-decoration{width:58px;height:58px;top:17px;right:15px;transform:none}.step-card:last-of-type .process-decoration{width:86px;height:86px;top:4px;right:3px}
+.stat-badge{display:flex;align-items:center;justify-content:center}.stat-badge .stat-icon{width:84px;height:84px;max-width:none;flex:none}
+.service-tile-img{width:96px;height:104px;left:0;top:20px}
+/* Two scales of grain give paper fibres and a softly mottled surface. */
+.hero::before,.pricing::before,.stats-band::before{opacity:.42}
+.process::before,.about::before,.faq::before,.footer::before,.feedback::before{opacity:.34}
+.services::before,.work::before{opacity:.27}
+.hero::before,.services::before,.process::before,.pricing::before,.work::before,.about::before,.feedback::before,.stats-band::before,.faq::before,.final-cta::before,.footer::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.055 .32' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Cpath filter='url(%23p)' opacity='.55' d='M0 0h220v220H0z'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' opacity='.35' d='M0 0h150v150H0z'/%3E%3C/svg%3E")}
+@media(max-width:1099px){.service-tile-img{width:76px;height:86px;left:-4px;top:24px}}
+@media(max-width:699px){.service-tile-img{width:76px;height:86px;top:23px}.faq-question{grid-template-columns:22px minmax(0,1fr) 48px}.faq-question .faq-icon{width:48px;height:48px}}
